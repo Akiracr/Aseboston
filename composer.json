@@ -35,6 +35,7 @@
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/bootstrap_layouts": "^5.3",
         "drupal/bootstrap_sass": "^5.0",
+        "drupal/coder": "^8.3",
         "drupal/context": "^5.0@RC",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
