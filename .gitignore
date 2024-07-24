@@ -1,0 +1,8 @@
+web/sites/default/services.yml
+web/sites/default/settings.local.php
+web/sites/default/files
+web/sites/default/files/*
+web/themes/custom/*/node_modules
+.DS_Store
+.vscode
+private-files/
