@@ -1,0 +1,25 @@
+uuid: fc7ec1bc-a94b-47a1-a8e4-0c6748a03062
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aseboston
+_core:
+  default_config_hash: jA9RCh2m33i9l8fKXWaNdJWIXh65uzL95YPraObeXq8
+id: aseboston_site_branding
+theme: aseboston
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

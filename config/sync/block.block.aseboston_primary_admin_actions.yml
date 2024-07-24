@@ -1,0 +1,20 @@
+uuid: b89ac7e8-b960-4f13-8e20-36596ccddd49
+langcode: es
+status: true
+dependencies:
+  theme:
+    - aseboston
+_core:
+  default_config_hash: pFoYnI-wIplKJ58iqR08hEvJMgBRwH2ImeMmcBZkLgA
+id: aseboston_primary_admin_actions
+theme: aseboston
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

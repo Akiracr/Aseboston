@@ -1,0 +1,22 @@
+uuid: 6b35a492-fb9b-44bc-806f-256c1e551fb8
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aseboston
+_core:
+  default_config_hash: WwEBRVwdYjEeHRZ9YdTE4zKWgIu90K0Yu1bnQg492MI
+id: aseboston_breadcrumbs
+theme: aseboston
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 5d1a3902-b0a6-44ff-8583-f1d1149e844c
+langcode: es
+status: true
+dependencies:
+  theme:
+    - aseboston
+_core:
+  default_config_hash: tw2hr1e6zsTFidwz5T1a5YC3rDJee9kPnI0Smhd570Y
+id: aseboston_secondary_local_tasks
+theme: aseboston
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

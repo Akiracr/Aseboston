@@ -1,0 +1,22 @@
+uuid: d6369e25-f86f-464d-ba53-697bd3cdd2ee
+langcode: es
+status: true
+dependencies:
+  theme:
+    - aseboston
+_core:
+  default_config_hash: hdYDlnHJOnVXNGD9OqyZqeZRQOKMlOzyNQ8IlSkS9_s
+id: aseboston_primary_local_tasks
+theme: aseboston
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas principales'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

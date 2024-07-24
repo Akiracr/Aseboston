@@ -1,0 +1,22 @@
+uuid: 3be53fe4-9c50-4b00-881c-c817232e2eda
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - aseboston
+_core:
+  default_config_hash: zWyD-3PbLR4zgLzFS7gDT5xglTyVBUcqw0V0RV51-sU
+id: aseboston_content
+theme: aseboston
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

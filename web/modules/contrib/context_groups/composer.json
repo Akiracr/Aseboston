@@ -1,0 +1,20 @@
+{
+  "name": "akiracr/context_groups",
+  "description": "In reactions add an option to add groups within each region.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://drupal.org/project/context_groups",
+  "authors": [
+    {
+      "name": "Igor Čurk",
+      "homepage": "https://www.drupal.org/u/icurk",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://drupal.org/project/issues/context_groups",
+    "source": "https://git.drupalcode.org/project/context_groups"
+  },
+  "require": { }
+}
+
