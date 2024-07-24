@@ -56,6 +56,7 @@
         "drupal/token": "^1.14",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_bootstrap": "^5.5@beta",
+        "drupal/youtube": "^2.0",
         "drush/drush": "^12.5",
         "mglaman/composer-drupal-lenient": "^1.0",
         "topfloor/composer-cleanup-vcs-dirs": "^1.1"
