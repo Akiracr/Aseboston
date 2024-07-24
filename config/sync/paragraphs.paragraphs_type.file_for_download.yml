@@ -1,0 +1,10 @@
+uuid: 5d6f1230-3e33-4610-80f2-24bf52f7f345
+langcode: es
+status: true
+dependencies: {  }
+id: file_for_download
+label: 'Archivo para descarga'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

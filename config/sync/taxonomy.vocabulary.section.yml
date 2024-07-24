@@ -1,0 +1,9 @@
+uuid: 63050086-0b12-486f-9587-c24110702d1a
+langcode: es
+status: true
+dependencies: {  }
+name: Sección
+vid: section
+description: null
+weight: 0
+new_revision: false

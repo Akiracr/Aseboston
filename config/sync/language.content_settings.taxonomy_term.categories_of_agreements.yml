@@ -1,0 +1,11 @@
+uuid: 8022b560-f54b-4400-9e06-7fe5e8a2ab40
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categories_of_agreements
+id: taxonomy_term.categories_of_agreements
+target_entity_type_id: taxonomy_term
+target_bundle: categories_of_agreements
+default_langcode: site_default
+language_alterable: false

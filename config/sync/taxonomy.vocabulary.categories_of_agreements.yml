@@ -1,0 +1,9 @@
+uuid: a13950f1-7a1a-4171-af3b-656f5efcea13
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categorías de convenios'
+vid: categories_of_agreements
+description: null
+weight: 0
+new_revision: false

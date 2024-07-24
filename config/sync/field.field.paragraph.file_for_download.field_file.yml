@@ -1,0 +1,27 @@
+uuid: 4c7dbcc8-e607-4fab-baad-65c480ae73cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - paragraphs.paragraphs_type.file_for_download
+  module:
+    - file
+id: paragraph.file_for_download.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: file_for_download
+label: Archivo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf docx xlsx'
+  max_filesize: ''
+  description_field: true
+field_type: file

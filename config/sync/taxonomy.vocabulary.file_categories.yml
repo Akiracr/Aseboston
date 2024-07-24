@@ -1,0 +1,9 @@
+uuid: 082706a8-cdd4-4596-9667-8f8686cf1853
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categorías de archivos'
+vid: file_categories
+description: null
+weight: 0
+new_revision: false
