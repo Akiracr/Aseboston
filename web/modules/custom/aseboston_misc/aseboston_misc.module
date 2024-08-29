@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ *
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/**
+ * Implements of hook_entity_base_field_info_alter().
+ */
+function aseboston_misc_entity_base_field_info_alter(&$fields, EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'menu_link_content') {
+    $fields['link']->setDisplayOptions('form', [
+      'type' => 'link_attributes',
+      'weight' => -2,
+      'settings' => [
+        'enabled_attributes' => [
+          'id' => TRUE,
+          'name' => FALSE,
+          'target' => TRUE,
+          'rel' => TRUE,
+          'class' => TRUE,
+          'accesskey' => FALSE,
+          'aria-label' => TRUE,
+        ],
+      ],
+    ]);
+  }
+}

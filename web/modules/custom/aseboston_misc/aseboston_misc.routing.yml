@@ -1,0 +1,7 @@
+aseboston_misc.admin:
+  path: '/inicio'
+  defaults:
+    _controller: '\Drupal\aseboston_misc\Controller\AsebostonMiscController::index'
+    _title: 'Inicio'
+  requirements:
+    _permission: 'access content'
