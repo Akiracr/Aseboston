@@ -61,6 +61,7 @@
         "drupal/youtube": "^2.0",
         "drush/drush": "^12.5",
         "mglaman/composer-drupal-lenient": "^1.0",
+        "oomphinc/composer-installers-extender": "^2.0",
         "topfloor/composer-cleanup-vcs-dirs": "^1.1"
     },
     "conflict": {
@@ -78,7 +79,8 @@
             "php-http/discovery": true,
             "cweagans/composer-patches": true,
             "mglaman/composer-drupal-lenient": true,
-            "topfloor/composer-cleanup-vcs-dirs": true
+            "topfloor/composer-cleanup-vcs-dirs": true,
+            "oomphinc/composer-installers-extender": true
         },
         "sort-packages": true
     },
@@ -88,12 +90,18 @@
                 "web-root": "web/"
             }
         },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"

@@ -107,6 +107,10 @@ class ComposerStaticInit7f462c0e1e81602f821b8b2f59a1a946
             'PHPStan\\PhpDocParser\\' => 21,
             'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 57,
         ),
+        'O' => 
+        array (
+            'OomphInc\\ComposerInstallersExtender\\' => 36,
+        ),
         'M' => 
         array (
             'Masterminds\\' => 12,
@@ -389,6 +393,10 @@ class ComposerStaticInit7f462c0e1e81602f821b8b2f59a1a946
         'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
         array (
             0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
+        ),
+        'OomphInc\\ComposerInstallersExtender\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/oomphinc/composer-installers-extender/src',
         ),
         'Masterminds\\' => 
         array (
