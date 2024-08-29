@@ -1,0 +1,9 @@
+aseboston:
+  label: Clean layout
+  category: ASEBoston
+  template: templates/ds/layout--ds-clean
+  icon: images/ds/ds-clean.png
+  class: '\Drupal\ds\Plugin\DsLayout'
+  regions:
+    ds_content:
+      label: Content
