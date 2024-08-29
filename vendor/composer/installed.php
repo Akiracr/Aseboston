@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '83918525b7fb8b63b392ee433ba8eaf7b3703a03',
+        'reference' => '0ba4e29ba51484e93c8796a2d470f58f407e208e',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -523,6 +523,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/fontawesome' => array(
+            'pretty_version' => '2.26.0',
+            'version' => '2.26.0.0',
+            'reference' => '8.x-2.26',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/fontawesome',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/honeypot' => array(
             'pretty_version' => '2.2.0',
             'version' => '2.2.0.0',
@@ -580,7 +589,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '83918525b7fb8b63b392ee433ba8eaf7b3703a03',
+            'reference' => '0ba4e29ba51484e93c8796a2d470f58f407e208e',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
