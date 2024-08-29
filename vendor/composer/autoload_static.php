@@ -401,7 +401,6 @@ class ComposerStaticInit7f462c0e1e81602f821b8b2f59a1a946
         'Html2Text\\' => 
         array (
             0 => __DIR__ . '/..' . '/html2text/html2text/src',
-            1 => __DIR__ . '/..' . '/html2text/html2text/test',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
