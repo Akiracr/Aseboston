@@ -51,6 +51,7 @@
         "drupal/field_group": "^3.4",
         "drupal/field_group_link": "^3.1",
         "drupal/fontawesome": "^2.26",
+        "drupal/fontawesome_menu_icons": "^3.0",
         "drupal/honeypot": "^2.1",
         "drupal/link_attributes": "^2.1",
         "drupal/menu_trail_by_path": "^2.0",
