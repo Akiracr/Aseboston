@@ -14,6 +14,10 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "akiracr/context_groups",
@@ -61,6 +65,7 @@
         "drupal/youtube": "^2.0",
         "drush/drush": "^12.5",
         "mglaman/composer-drupal-lenient": "^1.0",
+        "npm-asset/fonticonpicker--fonticonpicker": "^3.1",
         "oomphinc/composer-installers-extender": "^2.0",
         "topfloor/composer-cleanup-vcs-dirs": "^1.1"
     },

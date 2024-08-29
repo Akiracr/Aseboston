@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8fce37d97131e2aedb0fce94b570d1e",
+    "content-hash": "1017e1a292e29f93982c8d4d19efc630",
     "packages": [
         {
             "name": "akiracr/context_groups",
@@ -4687,6 +4687,18 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.1.0"
             },
             "time": "2024-07-01T20:03:41+00:00"
+        },
+        {
+            "name": "npm-asset/fonticonpicker--fonticonpicker",
+            "version": "3.1.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@fonticonpicker/fonticonpicker/-/fonticonpicker-3.1.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "oomphinc/composer-installers-extender",
