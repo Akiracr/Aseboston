@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '96522874df4ef3ef42f358717dc0ab592a652019',
+        'reference' => '83918525b7fb8b63b392ee433ba8eaf7b3703a03',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -532,6 +532,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/link_attributes' => array(
+            'pretty_version' => '2.1.1',
+            'version' => '2.1.1.0',
+            'reference' => '2.1.1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/link_attributes',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/menu_trail_by_path' => array(
             'pretty_version' => '2.1.0',
             'version' => '2.1.0.0',
@@ -571,7 +580,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '96522874df4ef3ef42f358717dc0ab592a652019',
+            'reference' => '83918525b7fb8b63b392ee433ba8eaf7b3703a03',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

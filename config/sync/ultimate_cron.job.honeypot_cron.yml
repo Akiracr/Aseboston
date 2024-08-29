@@ -1,10 +1,10 @@
-uuid: 248cb598-8dc6-41a7-b93e-1eaedea6e42c
+uuid: d1127958-f02f-4549-81c5-b396ec002321
 langcode: es
 status: true
 dependencies:
   module:
     - honeypot
-title: 'Default cron handler'
+title: 'Manejador de cron por defecto'
 id: honeypot_cron
 weight: 0
 module: honeypot
