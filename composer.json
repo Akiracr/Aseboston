@@ -61,6 +61,7 @@
         "drupal/pathauto": "^1.12",
         "drupal/recaptcha": "^3.4",
         "drupal/redirect": "^1.9",
+        "drupal/splide": "^2.0",
         "drupal/svg_image_field": "^2.3",
         "drupal/symfony_mailer": "^1.4",
         "drupal/token": "^1.14",
