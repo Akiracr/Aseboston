@@ -1,18 +1,24 @@
 /* VARIABLES */
 
 // colors
-$primary-shade: rgb(255, 78, 46);
+$primary-shade: #E22E26;
 $primary-light: tint-color($primary-shade, 37%);
 $primary-dark: shade-color($primary-shade, 12%);
-$accent-shade: #0079C0;
+$accent-shade: #1F3B71;
 $accent-light: tint-color($accent-shade, 37%);
 $accent-dark: shade-color($accent-shade, 12%);
 // Reassign color vars to semantic color scheme
-$red: #dc3545;
+$darkblue: #0e2450;
+$blue: #1F3B71;
+$skyblue: #1F71B7;
+$red: #E22E26;
 $yellow: #ffc107;
-$green: #28a745;
+$green: #077E40;
 $cyan: #17a2b8;
 $white: #fff;
+$gray-1: #FAFBFC;
+$gray-300: #B2B2B2;
+$gray-600: #585856;
 $gray-100: #f8f9fa;
 $gray-800: #343a40;
 // scss-docs-start theme-color-variables

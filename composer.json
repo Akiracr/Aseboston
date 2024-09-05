@@ -59,11 +59,13 @@
         "drupal/metatag": "^2.0",
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.12",
+        "drupal/recaptcha": "^3.4",
         "drupal/redirect": "^1.9",
         "drupal/symfony_mailer": "^1.4",
         "drupal/token": "^1.14",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_bootstrap": "^5.5@beta",
+        "drupal/webform": "^6.2",
         "drupal/youtube": "^2.0",
         "drush/drush": "^12.5",
         "mglaman/composer-drupal-lenient": "^1.0",
@@ -74,7 +76,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {
