@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '5c138d4a827e4f19f42e49bf417c9505fad28f3b',
+        'reference' => '13bd43c67e4503a06a1b0f443e39fe1144faf5c1',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -631,6 +631,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/rabbit_hole' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => '8.x-1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/rabbit_hole',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/recaptcha' => array(
             'pretty_version' => '3.4.0',
             'version' => '3.4.0.0',
@@ -643,7 +652,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '5c138d4a827e4f19f42e49bf417c9505fad28f3b',
+            'reference' => '13bd43c67e4503a06a1b0f443e39fe1144faf5c1',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
