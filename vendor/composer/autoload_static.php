@@ -37,6 +37,10 @@ class ComposerStaticInit7f462c0e1e81602f821b8b2f59a1a946
             'phootwork\\lang\\' => 15,
             'phootwork\\collection\\' => 21,
         ),
+        'e' => 
+        array (
+            'enshrined\\svgSanitize\\' => 22,
+        ),
         'c' => 
         array (
             'cweagans\\Composer\\' => 18,
@@ -185,6 +189,10 @@ class ComposerStaticInit7f462c0e1e81602f821b8b2f59a1a946
         'phootwork\\collection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phootwork/collection',
+        ),
+        'enshrined\\svgSanitize\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
         ),
         'cweagans\\Composer\\' => 
         array (
