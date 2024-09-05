@@ -1,0 +1,38 @@
+{
+  "name": "drupal/animate_css",
+  "description": "Animate is an integration of animate.css, a bunch of cool, fun, and cross-browser animations for you to use in your projects.Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.",
+  "keywords": [
+    "animate_css",
+    "animate",
+    "Drupal"
+  ],
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/animate_css",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/animate_css",
+    "source": "http://cgit.drupalcode.org/animate_css"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "drupal-shimmy/animate.css",
+        "version": "4.1.1",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/drupal-shimmy/animate.css/archive/refs/tags/v4.1.1.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "drupal-shimmy/animate.css": "4.1.1"
+  }
+}

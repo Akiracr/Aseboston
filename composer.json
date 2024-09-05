@@ -33,6 +33,18 @@
         {
             "type": "package",
             "package": {
+                "name": "animate-css/animate.css",
+                "version": "4.1.1",
+                "type": "drupal-library",
+                "dist": {
+                  "url": "https://github.com/animate-css/animate.css/archive/refs/tags/v4.1.1.zip",
+                  "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "splidejs/splide",
                 "version": "4.1.3",
                 "type": "drupal-library",
@@ -45,9 +57,11 @@
     ],
     "require": {
         "akiracr/context_groups": "dev-master",
+        "animate-css/animate.css": "^4.1",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/animate_css": "^2.1",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/bootstrap_layouts": "^5.3",
         "drupal/bootstrap_sass": "^5.0",

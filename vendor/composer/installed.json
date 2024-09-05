@@ -14,6 +14,18 @@
             "install-path": "../../web/modules/contrib/context_groups"
         },
         {
+            "name": "animate-css/animate.css",
+            "version": "4.1.1",
+            "version_normalized": "4.1.1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/animate-css/animate.css/archive/refs/tags/v4.1.1.zip"
+            },
+            "type": "drupal-library",
+            "installation-source": "dist",
+            "install-path": "../../web/libraries/animate.css"
+        },
+        {
             "name": "asm89/stack-cors",
             "version": "v2.2.0",
             "version_normalized": "2.2.0.0",
@@ -1620,6 +1632,43 @@
             "install-path": "../doctrine/persistence"
         },
         {
+            "name": "drupal-shimmy/animate.css",
+            "version": "v4.1.1",
+            "version_normalized": "4.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal-shimmy/animate.css.git",
+                "reference": "86b3e75b20182bc2fc89ea310e2c37363a7b8e9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal-shimmy/animate.css/zipball/86b3e75b20182bc2fc89ea310e2c37363a7b8e9b",
+                "reference": "86b3e75b20182bc2fc89ea310e2c37363a7b8e9b",
+                "shasum": ""
+            },
+            "time": "2020-09-07T11:20:12+00:00",
+            "type": "drupal-library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later",
+                "LGPL-2.1-or-later",
+                "MPL-1.1"
+            ],
+            "description": "animate.css Drupal shim",
+            "homepage": "https://github.com/animate-css/animate.css",
+            "keywords": [
+                "Animate.css",
+                "plugin",
+                "shim"
+            ],
+            "support": {
+                "issues": "https://github.com/animate-css/animate.css/issues",
+                "source": "https://github.com/animate-css/animate.css/tree/master"
+            },
+            "install-path": "../../web/libraries/animate.css"
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "3.5.0",
             "version_normalized": "3.5.0.0",
@@ -1706,6 +1755,84 @@
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
             },
             "install-path": "../../web/modules/contrib/admin_toolbar"
+        },
+        {
+            "name": "drupal/animate_css",
+            "version": "2.1.1",
+            "version_normalized": "2.1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/animate_css.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/animate_css-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "b227d24999c47939862392738023fdde3b1fd1a2"
+            },
+            "require": {
+                "drupal-shimmy/animate.css": "4.1.1",
+                "drupal/core": "^10.1 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1716300009",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ddhuri",
+                    "homepage": "https://www.drupal.org/user/3179507"
+                },
+                {
+                    "name": "djalxs",
+                    "homepage": "https://www.drupal.org/user/3359162"
+                },
+                {
+                    "name": "pranav.aeer",
+                    "homepage": "https://www.drupal.org/user/3544129"
+                },
+                {
+                    "name": "rahulbile",
+                    "homepage": "https://www.drupal.org/user/339798"
+                },
+                {
+                    "name": "revati_gawas",
+                    "homepage": "https://www.drupal.org/user/3544132"
+                },
+                {
+                    "name": "shraddha bidaye",
+                    "homepage": "https://www.drupal.org/user/3687498"
+                },
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                }
+            ],
+            "description": "Animate is an integration of animate.css, a bunch of cool, fun, and cross-browser animations for you to use in your projects.Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.",
+            "homepage": "https://www.drupal.org/project/animate_css",
+            "keywords": [
+                "Drupal",
+                "animate",
+                "animate_css"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/animate_css",
+                "issues": "https://www.drupal.org/project/issues/animate_css"
+            },
+            "install-path": "../../web/modules/contrib/animate_css"
         },
         {
             "name": "drupal/blazy",
