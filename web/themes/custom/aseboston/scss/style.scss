@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: Bootstrap 4 Sass
 Description: Bootstrap 4 with Sass
 */
@@ -10,11 +10,15 @@ Description: Bootstrap 4 with Sass
 -------------------------------------------------*/
 
 body {
-    background: $white;
+    background: $gray-1;
 }
 
+b,
+strong {
+  font-weight: 800;
+}
 
-/* COLORS 
+/* COLORS
 --------------------------------------------------*/
 
 a {

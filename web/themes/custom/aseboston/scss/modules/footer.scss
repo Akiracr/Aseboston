@@ -1,0 +1,50 @@
+.site-footer {
+  padding: 1rem 0 0 !important;
+  border-top: 1rem solid $green;
+  &,
+  a,
+  .nav-link {
+    color: $white;
+  }
+  .nav-vertical {
+    .h5 {
+      padding-left: 16px;
+    }
+    .nav{
+      &,
+      .nav-item {
+        display: block;
+      }
+    }
+    .nav-link {
+      display: inline;
+      text-transform: uppercase;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  .logo--footer {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $skyblue;
+  }
+  .social-menu {
+    .nav-link {
+      display: inline;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+  }
+  .copyright {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    text-align: center;
+    background: $darkblue;
+  }
+}

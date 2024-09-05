@@ -24,6 +24,7 @@ function aseboston_misc_entity_base_field_info_alter(&$fields, EntityTypeInterfa
           'class' => TRUE,
           'accesskey' => FALSE,
           'aria-label' => TRUE,
+          'title' => TRUE,
         ],
       ],
     ]);

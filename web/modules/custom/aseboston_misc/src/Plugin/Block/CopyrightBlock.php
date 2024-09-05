@@ -40,7 +40,7 @@ class CopyrightBlock extends BlockBase {
       ],
       'absolute'   => TRUE,
     ];
-    $developerLink = Link::fromTextAndUrl($this->t('Plasmático Media Lab'), Url::fromUri('https://plasmaticocr.com/es', $optionsLink))->toString();
+    $developerLink = Link::fromTextAndUrl($this->t('Plasmático Media Lab'), Url::fromUri('https://plasmaticocr.com', $optionsLink))->toString();
     $block = [
       'copyright' => [
         '#type' => "markup",
