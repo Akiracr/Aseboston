@@ -1,0 +1,79 @@
+uuid: d070a764-4062-4279-9497-f29a04bc7e73
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_info
+    - core.entity_view_mode.block_content.footer
+    - field.field.block_content.contact_info.field_contact_data
+    - field.field.block_content.contact_info.field_description
+    - field.field.block_content.contact_info.field_operating_hours
+  module:
+    - ds
+    - entity_reference_revisions
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - field_operating_hours
+id: block_content.contact_info.footer
+targetEntityType: block_content
+bundle: contact_info
+mode: footer
+content:
+  field_operating_hours:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: compact
+      link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 0
+    region: ds_content
+hidden:
+  field_contact_data: true
+  field_description: true
+  langcode: true

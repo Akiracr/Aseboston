@@ -1,0 +1,13 @@
+uuid: 77bcaa28-4ddd-4d31-9d69-3f6e3bc0be0b
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+_core:
+  default_config_hash: aQm30ToKvnhu77M_7zjucDLw0bxkaz5u3LDhByjaH8A
+id: feeds_feed_import_action
+label: 'Import selected feeds'
+type: feeds_feed
+plugin: feeds_feed_import_action
+configuration: {  }

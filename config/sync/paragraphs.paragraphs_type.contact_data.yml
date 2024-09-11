@@ -1,0 +1,10 @@
+uuid: 95ea4222-7686-4c83-8fc8-6820625f1812
+langcode: es
+status: true
+dependencies: {  }
+id: contact_data
+label: 'Datos de contacto'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

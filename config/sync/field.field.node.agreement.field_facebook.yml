@@ -1,0 +1,23 @@
+uuid: bb0d714a-55e0-4723-8329-26e250b6af29
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facebook
+    - node.type.agreement
+  module:
+    - link
+id: node.agreement.field_facebook
+field_name: field_facebook
+entity_type: node
+bundle: agreement
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

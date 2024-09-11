@@ -1,6 +1,6 @@
 uuid: 9b970f54-b717-41f7-bb53-d912ff1a91f2
 langcode: es
-status: true
+status: false
 dependencies:
   theme:
     - aseboston

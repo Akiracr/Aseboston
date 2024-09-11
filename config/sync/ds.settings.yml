@@ -1,17 +1,18 @@
 _core:
   default_config_hash: YPUqVPBFEsvwMa23vT1yY60XrIdvCZdkOZICIV0BtbU
 disabled: false
-field_template: false
-ft_default: default
+field_template: true
+ft_default: expert
 ft_show_colon: false
 ft_layout_builder: false
-ft_expert_prefix_suffix_textarea: false
 ft_bc: false
 ft_default_bc: false
+ft_expert_prefix_suffix_textarea: false
 classes:
   region: {  }
   field: {  }
 use_field_names: true
 exclude_layout_builder_blocks_on_block_field: false
+exclude_ds_layout_layout_builder: false
 layout_icon_image_bc: false
 layout_suggestion_bc: false

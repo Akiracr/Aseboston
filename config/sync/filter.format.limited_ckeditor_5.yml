@@ -1,0 +1,87 @@
+uuid: 3362f0cd-409b-4482-bcf0-38d25b007a8f
+langcode: es
+status: true
+dependencies:
+  module:
+    - blazy
+    - splide
+name: 'Limited CKEditor 5'
+format: limited_ckeditor_5
+weight: 0
+filters:
+  blazy_filter:
+    id: blazy_filter
+    provider: blazy
+    status: false
+    weight: 3
+    settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_media_style: ''
+      box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
+      use_data_uri: '0'
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p> <h1> <h2> <h3> <h4> <h5> <h6> <strong> <em>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  splide_filter:
+    id: splide_filter
+    provider: splide
+    status: false
+    weight: 4
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      optionset: default
+      by_delta: null
+      layout: ''
+      admin_uri: '/clientes/aseboston.com/web/admin/config/content/formats/manage/limited_ckeditor_5?destination=/clientes/aseboston.com/web/admin/config/content/formats&ajax_form=1&_wrapper_format=drupal_ajax'
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      skin: ''
+      overridables:
+        arrows: '0'
+        pagination: '0'
+        autoplay: '0'
+        autoWidth: '0'
+        autoHeight: '0'
+        drag: '0'
+        wheel: '0'
+        randomize: '0'
+      optionset_nav: ''
+      skin_nav: ''
+      nav_caption: ''
+      thumbnail_effect: ''
+      navpos: ''
+      override: false
+      pagination_pos: ''
+      preserve_keys: false
+      visible_items: null

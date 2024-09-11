@@ -2,13 +2,13 @@ _core:
   default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
 langcode: es
 uuid: f1d4027b-f18a-4f10-98bf-ad0e455dcabb
-name: Aseboston
+name: ASEBoston
 mail: maxmv@maxmendez.net
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /user/login
+  front: /inicio
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es

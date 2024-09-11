@@ -1,0 +1,19 @@
+uuid: f537a3fb-2d50-4b2c-bcd3-cca9e3f08c13
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.operating_hour
+id: paragraph.operating_hour.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: operating_hour
+label: Etiqueta
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

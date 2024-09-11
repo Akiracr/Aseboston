@@ -1,0 +1,14 @@
+uuid: d4834fd4-f47e-4160-8130-7aa5ee4b5b51
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.agreement
+id: node_type_agreement
+entity_type_id: node_type
+entity_id: agreement
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

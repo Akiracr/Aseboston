@@ -1,0 +1,253 @@
+uuid: be948d7c-465c-4072-9a5a-20723c4a36f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.gallery.body
+    - field.field.node.gallery.feeds_item
+    - field.field.node.gallery.field_category
+    - field.field.node.gallery.field_date
+    - field.field.node.gallery.field_image
+    - field.field.node.gallery.field_images
+    - field.field.node.gallery.field_old_id
+    - field.field.node.gallery.field_section
+    - image.style.gallery_list_item
+    - node.type.gallery
+  module:
+    - datetime
+    - ds
+    - field_group
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - group_wrapper
+        - group_link
+        - field_image
+        - node_title
+        - field_date
+        - node_link
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          'link class': ''
+          link_target: ''
+          wrapper: h2
+          class: gallery-title
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Ver más'
+          'link class': 'btn btn-primary btn-sm'
+          wrapper: ''
+          class: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+  field_group:
+    group_link:
+      children:
+        - field_image
+        - node_title
+      label: Link
+      parent_name: group_wrapper
+      region: ds_content
+      weight: 1
+      format_type: link
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        target: entity
+        custom_uri: ''
+        target_attribute: default
+    group_wrapper:
+      children:
+        - group_link
+        - field_date
+        - node_link
+      label: Wrapper
+      parent_name: ''
+      region: ds_content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: galllery-item-wrap
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.gallery.teaser
+targetEntityType: node
+bundle: gallery
+mode: teaser
+content:
+  field_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: custom_short
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: 'gallery-date mb-3'
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 2
+    region: ds_content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: gallery_list_item
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: 'img-wrap mb-3'
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 1
+    region: ds_content
+hidden:
+  body: true
+  feeds_item: true
+  field_category: true
+  field_images: true
+  field_old_id: true
+  field_section: true
+  langcode: true
+  links: true

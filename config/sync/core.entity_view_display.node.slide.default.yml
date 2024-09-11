@@ -1,0 +1,283 @@
+uuid: 2fe33692-25bd-45f2-a8c9-f8b04d8a1db3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slide.body
+    - field.field.node.slide.field_image
+    - field.field.node.slide.field_left_image
+    - field.field.node.slide.field_link
+    - field.field.node.slide.field_section
+    - node.type.slide
+  module:
+    - ds
+    - field_group
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - field_image
+        - group_absolute_container
+        - group_left_side
+        - field_left_image
+        - group_container
+        - group_row
+        - group_left_side_wrap
+        - body
+        - field_link
+  field_group:
+    group_absolute_container:
+      children:
+        - group_container
+      label: 'Absolute container'
+      parent_name: ''
+      region: ds_content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: absolute-container
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_container:
+      children:
+        - group_row
+      label: Container
+      parent_name: group_absolute_container
+      region: ds_content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: container
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_row:
+      children:
+        - group_left_side
+        - field_left_image
+      label: Row
+      parent_name: group_container
+      region: ds_content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_left_side:
+      children:
+        - group_left_side_wrap
+      label: 'Left side'
+      parent_name: group_row
+      region: ds_content
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: 'col-12 col-sm-6 left-side animate__animated animate__fadeInLeft'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_left_side_wrap:
+      children:
+        - body
+        - field_link
+      label: 'Left side wrap'
+      parent_name: group_left_side
+      region: ds_content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.slide.default
+targetEntityType: node
+bundle: slide
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: ds_content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: eager
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: img-wrap
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 1
+    region: ds_content
+  field_left_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: 'col-12 col-sm-6 right-side img-h-wrap animate__animated animate__fadeInRight'
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 4
+    region: ds_content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: mt-4
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 22
+    region: ds_content
+hidden:
+  field_section: true
+  langcode: true
+  links: true

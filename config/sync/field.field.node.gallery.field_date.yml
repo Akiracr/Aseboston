@@ -1,0 +1,24 @@
+uuid: b5611c21-d387-45b2-a8a9-c473903444bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.gallery
+  module:
+    - datetime
+id: node.gallery.field_date
+field_name: field_date
+entity_type: node
+bundle: gallery
+label: Fecha
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

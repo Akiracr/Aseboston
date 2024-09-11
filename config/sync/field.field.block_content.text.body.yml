@@ -1,0 +1,26 @@
+uuid: 870ac254-a8eb-41cc-a5d4-4ecf3777179e
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.text
+    - field.storage.block_content.body
+    - filter.format.ckeditor_5
+  module:
+    - text
+id: block_content.text.body
+field_name: body
+entity_type: block_content
+bundle: text
+label: Contenido
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - ckeditor_5
+field_type: text_with_summary

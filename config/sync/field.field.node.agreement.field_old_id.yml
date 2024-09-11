@@ -1,0 +1,23 @@
+uuid: 6bfe64ea-07bb-45bd-9af9-05c151235605
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_old_id
+    - node.type.agreement
+id: node.agreement.field_old_id
+field_name: field_old_id
+entity_type: node
+bundle: agreement
+label: 'Old id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

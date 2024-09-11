@@ -1,0 +1,26 @@
+uuid: 207fd0d5-680c-4218-9aa7-8eeee140d94a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.ckeditor_5
+    - node.type.gallery
+  module:
+    - text
+id: node.gallery.body
+field_name: body
+entity_type: node
+bundle: gallery
+label: 'Cuerpo del contenido'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - ckeditor_5
+field_type: text_with_summary

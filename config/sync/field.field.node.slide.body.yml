@@ -1,0 +1,26 @@
+uuid: 4c470f82-d838-4700-bcbb-5ee5e80cad34
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.limited_ckeditor_5
+    - node.type.slide
+  module:
+    - text
+id: node.slide.body
+field_name: body
+entity_type: node
+bundle: slide
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - limited_ckeditor_5
+field_type: text_with_summary

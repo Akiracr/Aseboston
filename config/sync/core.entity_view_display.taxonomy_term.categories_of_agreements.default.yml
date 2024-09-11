@@ -1,0 +1,45 @@
+uuid: 9d46faa1-e9b1-46c9-8ea4-b84e83b0b164
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categories_of_agreements.field_image
+    - taxonomy.vocabulary.categories_of_agreements
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - description
+id: taxonomy_term.categories_of_agreements.default
+targetEntityType: taxonomy_term
+bundle: categories_of_agreements
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: ds_content
+hidden:
+  field_image: true
+  langcode: true

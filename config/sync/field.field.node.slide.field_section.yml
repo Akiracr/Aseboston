@@ -1,0 +1,33 @@
+uuid: 74bc995e-a1b6-4976-bef9-bbe92f28dc6e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.slide
+    - taxonomy.vocabulary.section
+  content:
+    - 'taxonomy_term:section:fc560303-a278-41ec-8adb-f1379df736d5'
+id: node.slide.field_section
+field_name: field_section
+entity_type: node
+bundle: slide
+label: Sección
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: fc560303-a278-41ec-8adb-f1379df736d5
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      section: section
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

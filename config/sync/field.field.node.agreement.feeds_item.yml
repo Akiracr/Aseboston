@@ -1,0 +1,23 @@
+uuid: 9bd3822c-daba-401c-9ef8-0f0a481ec672
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.feeds_item
+    - node.type.agreement
+  module:
+    - feeds
+id: node.agreement.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: agreement
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

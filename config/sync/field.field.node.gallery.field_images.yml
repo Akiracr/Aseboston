@@ -1,0 +1,38 @@
+uuid: 4dae71ea-3aa5-4a05-955f-2bfafe1f3712
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images
+    - node.type.gallery
+  module:
+    - image
+id: node.gallery.field_images
+field_name: field_images
+entity_type: node
+bundle: gallery
+label: Fotos
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

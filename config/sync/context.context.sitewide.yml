@@ -1,0 +1,289 @@
+uuid: 1f75cade-0b84-4fc7-82b4-da2662600809
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.links-of-interest
+    - system.menu.social-menu
+  content:
+    - 'block_content:contact_info:e6bc4686-aaea-45d3-af9c-87b18ea856ff'
+    - 'block_content:image:d06f54e7-36af-46e8-9e3d-0b54eab83867'
+    - 'block_content:links_w_images:ba23298f-c6ab-43d5-95cb-693d8ba50594'
+    - 'block_content:text:3e9a2a84-21d4-473e-973d-0e8f3be6c95c'
+  module:
+    - aseboston_misc
+    - block_content
+    - context_groups
+    - system
+third_party_settings:
+  context_groups:
+    container:
+      name: container
+      label: Container
+      region: breadcrumb
+      parent: absolute_container
+      weight: '2'
+      theme: aseboston
+      class: container
+      all_parents:
+        - absolute_container
+    absolute_container:
+      name: absolute_container
+      label: 'Absolute container'
+      region: breadcrumb
+      parent: ''
+      weight: '1'
+      theme: aseboston
+      class: absolute-container
+      all_parents: {  }
+    wrapper:
+      name: wrapper
+      label: Wrapper
+      region: breadcrumb
+      parent: container
+      weight: '0'
+      theme: aseboston
+      class: ''
+      all_parents:
+        - absolute_container
+        - container
+label: Sitewide
+name: sitewide
+group: General
+description: ''
+requireAllConditions: false
+disabled: false
+conditions: {  }
+reactions:
+  blocks:
+    id: blocks
+    uuid: e50e4626-36e1-4eea-8b5a-f2f9133df172
+    blocks:
+      d2ecff1f-8091-43f4-9920-c7bd49cb5d08:
+        uuid: d2ecff1f-8091-43f4-9920-c7bd49cb5d08
+        id: 'system_menu_block:social-menu'
+        label: Síguenos
+        provider: system
+        label_display: visible
+        region: footer_second
+        weight: '7'
+        custom_id: system_menu_block_social_menu
+        theme: aseboston
+        css_class: 'col-12 col-sm-6 col-md-3 mb-4 social-menu'
+        unique: 1
+        context_id: sitewide
+        context_mapping: {  }
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      844c55e3-22b3-4880-8747-16911e3d5e58:
+        uuid: 844c55e3-22b3-4880-8747-16911e3d5e58
+        id: 'block_content:e6bc4686-aaea-45d3-af9c-87b18ea856ff'
+        label: 'Horarios de atención'
+        provider: block_content
+        label_display: '0'
+        region: footer_second
+        weight: '5'
+        custom_id: block_content_e6bc4686_aaea_45d3_af9c_87b18ea856ff
+        theme: aseboston
+        css_class: 'col-12 col-sm-6 col-md-3 mb-4'
+        unique: 1
+        context_id: sitewide
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: footer
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      a948c60e-dbc5-4273-93cb-4f5a88236d30:
+        uuid: a948c60e-dbc5-4273-93cb-4f5a88236d30
+        id: aseboston_misc_copyright_block
+        label: Copyright
+        provider: aseboston_misc
+        label_display: '0'
+        region: footer_fifth
+        weight: '9'
+        custom_id: aseboston_misc_copyright_block
+        theme: aseboston
+        css_class: ''
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      da4eecc0-d089-446d-84e2-98e7317fbcc5:
+        uuid: da4eecc0-d089-446d-84e2-98e7317fbcc5
+        id: 'system_menu_block:links-of-interest'
+        label: 'Enlaces de interés'
+        provider: system
+        label_display: visible
+        region: footer_second
+        weight: '6'
+        custom_id: system_menu_block_links_of_interest
+        theme: aseboston
+        css_class: 'col-12 col-sm-6 col-md-3 mb-4 nav-vertical'
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      15fb8e41-e6ab-4003-a8b5-c509a41d8253:
+        uuid: 15fb8e41-e6ab-4003-a8b5-c509a41d8253
+        id: 'block_content:3e9a2a84-21d4-473e-973d-0e8f3be6c95c'
+        label: Contáctenos
+        provider: block_content
+        label_display: '0'
+        region: footer_second
+        weight: '4'
+        custom_id: block_content_3e9a2a84_21d4_473e_973d_0e8f3be6c95c
+        theme: aseboston
+        css_class: 'col-12 mb-5'
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: full
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      4650d365-adbf-4653-a70f-96222e55f622:
+        uuid: 4650d365-adbf-4653-a70f-96222e55f622
+        id: 'block_content:ba23298f-c6ab-43d5-95cb-693d8ba50594'
+        label: 'Descarga nuestra APP'
+        provider: block_content
+        label_display: visible
+        region: footer_second
+        weight: '8'
+        custom_id: block_content_ba23298f_c6ab_43d5_95cb_693d8ba50594
+        theme: aseboston
+        css_class: 'col-12 col-sm-6 col-md-3 mb-4'
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: full
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      46afb5e7-bc67-4985-8bd5-4239b4571579:
+        uuid: 46afb5e7-bc67-4985-8bd5-4239b4571579
+        id: 'block_content:d06f54e7-36af-46e8-9e3d-0b54eab83867'
+        label: 'Logo de footer'
+        provider: block_content
+        label_display: '0'
+        region: footer_first
+        weight: '3'
+        custom_id: block_content_d06f54e7_36af_46e8_9e3d_0b54eab83867
+        theme: aseboston
+        css_class: 'mt-4 logo--footer'
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: full
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      1a35c34d-f0d8-49dc-a811-a6ad3e5843c5:
+        uuid: 1a35c34d-f0d8-49dc-a811-a6ad3e5843c5
+        id: 'system_menu_block:social-menu'
+        label: 'Menú social'
+        provider: system
+        label_display: '0'
+        region: secondary_menu
+        weight: '0'
+        custom_id: system_menu_block_social_menu
+        theme: aseboston
+        css_class: ''
+        unique: 1
+        context_id: sitewide
+        context_mapping: {  }
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+      196b8626-71e0-4580-a0d7-fb99d8237666:
+        uuid: 196b8626-71e0-4580-a0d7-fb99d8237666
+        id: page_title_block
+        label: 'Título de la página'
+        provider: core
+        label_display: '0'
+        region: breadcrumb
+        weight: '2'
+        custom_id: page_title_block
+        theme: aseboston
+        css_class: ''
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        parent_wrapper:
+          parent: wrapper
+        all_parents:
+          - absolute_container
+          - container
+          - wrapper
+        third_party_settings: {  }
+      c9968e10-3df5-450b-985b-8f46d24129a7:
+        uuid: c9968e10-3df5-450b-985b-8f46d24129a7
+        id: system_breadcrumb_block
+        label: 'Enlaces de ayuda a la navegación'
+        provider: system
+        label_display: '0'
+        region: breadcrumb
+        weight: '1'
+        custom_id: system_breadcrumb_block
+        theme: aseboston
+        css_class: ''
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        parent_wrapper:
+          parent: wrapper
+        all_parents:
+          - absolute_container
+          - container
+          - wrapper
+        third_party_settings: {  }
+      22698e22-06ef-4673-b4d1-487fdb30fec2:
+        uuid: 22698e22-06ef-4673-b4d1-487fdb30fec2
+        id: system_messages_block
+        label: Mensajes
+        provider: system
+        label_display: '0'
+        region: featured_top
+        weight: '0'
+        custom_id: system_messages_block
+        theme: aseboston
+        css_class: ''
+        unique: 0
+        context_id: sitewide
+        context_mapping: {  }
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: -1

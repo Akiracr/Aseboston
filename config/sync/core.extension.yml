@@ -3,9 +3,13 @@ _core:
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  animate_css: 0
+  blazy: 0
   block: 0
+  block_content: 0
   bootstrap_layouts: 0
   breakpoint: 0
+  captcha: 0
   ckeditor5: 0
   config: 0
   contact: 0
@@ -21,19 +25,29 @@ module:
   easy_breadcrumb: 0
   editor: 0
   entity_reference_revisions: 0
+  entityqueue: 0
+  feeds: 0
+  feeds_tamper: 0
   field: 0
   field_group: 0
   field_group_link: 0
+  field_group_markup: 0
   field_ui: 0
   file: 0
   filter: 0
+  fontawesome: 0
+  fontawesome_iconpicker_widget: 0
+  fontawesome_menu_icons: 0
   honeypot: 0
   image: 0
   inline_form_errors: 0
   language: 0
   layout_discovery: 0
   link: 0
+  link_attributes: 0
+  link_attributes_menu_link_content: 0
   locale: 0
+  media: 0
   menu_link_content: 0
   menu_trail_by_path: 0
   menu_ui: 0
@@ -43,9 +57,17 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  rabbit_hole: 0
+  recaptcha: 0
   redirect: 0
+  rh_node: 0
+  rh_taxonomy: 0
+  splide: 0
+  splide_ui: 0
+  svg_image_field: 0
   symfony_mailer: 0
   system: 0
+  tamper: 0
   taxonomy: 0
   telephone: 0
   text: 0
@@ -56,10 +78,14 @@ module:
   user: 0
   views_bootstrap: 0
   views_ui: 0
+  webform: 0
+  webform_submission_export_import: 0
+  webform_ui: 0
   youtube: 0
   ds: 1
   pathauto: 1
   ds_extras: 2
+  aseboston_misc: 10
   views: 10
   paragraphs: 11
   minimal: 1000

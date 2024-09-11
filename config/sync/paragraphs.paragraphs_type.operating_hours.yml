@@ -1,0 +1,10 @@
+uuid: 7a927432-0626-4853-bd16-d5235e2334dc
+langcode: es
+status: true
+dependencies: {  }
+id: operating_hours
+label: 'Horarios de atención'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,11 @@
+uuid: 00a04389-1bab-4257-a453-434a390ae18b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_info
+id: block_content.contact_info
+target_entity_type_id: block_content
+target_bundle: contact_info
+default_langcode: site_default
+language_alterable: false

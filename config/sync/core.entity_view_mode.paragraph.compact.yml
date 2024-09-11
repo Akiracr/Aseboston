@@ -1,0 +1,11 @@
+uuid: da729859-abd6-4c40-ac06-3571857596f0
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.compact
+label: Compacto
+description: ''
+targetEntityType: paragraph
+cache: true

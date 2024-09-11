@@ -1,0 +1,151 @@
+uuid: efbd2080-5f53-4c64-bfa3-46f2f4457c7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agreement.body
+    - field.field.node.agreement.field_category
+    - field.field.node.agreement.field_image
+    - field.field.node.agreement.field_link
+    - field.field.node.agreement.field_old_id
+    - field.field.node.agreement.field_phone
+    - node.type.agreement
+  module:
+    - node
+label: Convenios
+id: convenios
+description: ''
+help: ''
+import_period: 3600
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: agreement
+  langcode: es
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: true
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+custom_sources:
+  nid:
+    value: _nid
+    label: _nid
+    machine_name: nid
+    type: csv
+  title:
+    value: _title
+    label: _title
+    machine_name: title
+    type: csv
+  body:
+    value: _body
+    label: _body
+    machine_name: body
+    type: csv
+  link:
+    value: _link
+    label: _link
+    machine_name: link
+    type: csv
+  phone:
+    value: _phone
+    label: _phone
+    machine_name: phone
+    type: csv
+  category:
+    value: _category
+    label: _category
+    machine_name: category
+    type: csv
+  images:
+    value: _images
+    label: _images
+    machine_name: images
+    type: csv
+  image:
+    value: _image
+    label: _image
+    machine_name: image
+    type: csv
+  short_desc:
+    value: _short_desc
+    label: _short_desc
+    machine_name: short_desc
+    type: csv
+mappings:
+  -
+    target: field_old_id
+    map:
+      value: nid
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: short_desc
+      summary: ''
+    settings:
+      language: ''
+      format: ckeditor_5
+  -
+    target: field_link
+    map:
+      uri: link
+      title: ''
+    settings:
+      language: null
+  -
+    target: field_phone
+    map:
+      value: phone
+    settings:
+      language: null
+  -
+    target: field_category
+    map:
+      target_id: category
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      autocreate_bundle: categories_of_agreements
+  -
+    target: field_image
+    map:
+      target_id: image
+      alt: ''
+      title: ''
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+      autocreate_bundle: false

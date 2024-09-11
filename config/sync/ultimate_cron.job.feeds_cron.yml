@@ -1,0 +1,17 @@
+uuid: 993a56e2-d732-47f3-9115-4069d7567a24
+langcode: es
+status: true
+dependencies:
+  module:
+    - feeds
+title: 'Manejador de cron por defecto'
+id: feeds_cron
+weight: 0
+module: feeds
+callback: feeds_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

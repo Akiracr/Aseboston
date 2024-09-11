@@ -1,0 +1,49 @@
+uuid: 8b6c8f9a-8594-4de2-aa7b-0e231185d0e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_info
+    - field.storage.block_content.field_operating_hours
+    - paragraphs.paragraphs_type.operating_hours
+  module:
+    - entity_reference_revisions
+id: block_content.contact_info.field_operating_hours
+field_name: field_operating_hours
+entity_type: block_content
+bundle: contact_info
+label: 'Horarios de atención'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      operating_hours: operating_hours
+    negate: 0
+    target_bundles_drag_drop:
+      file_for_download:
+        weight: 8
+        enabled: false
+      image:
+        weight: 9
+        enabled: false
+      link_w_image:
+        weight: 10
+        enabled: false
+      operating_hour:
+        weight: 11
+        enabled: false
+      operating_hours:
+        weight: 12
+        enabled: true
+      text:
+        weight: 13
+        enabled: false
+      video:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

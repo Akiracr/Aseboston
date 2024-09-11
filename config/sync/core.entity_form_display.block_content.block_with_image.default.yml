@@ -1,0 +1,71 @@
+uuid: 260b206c-3976-492c-a0e1-a1414e8defba
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.block_with_image
+    - field.field.block_content.block_with_image.body
+    - field.field.block_content.block_with_image.field_image
+    - field.field.block_content.block_with_image.field_link
+    - image.style.thumbnail
+  module:
+    - image
+    - link_attributes
+    - text
+id: block_content.block_with_image.default
+targetEntityType: block_content
+bundle: block_with_image
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_attributes
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        rel: true
+        class: true
+        id: false
+        name: false
+        accesskey: false
+        aria-label: false
+        title: false
+      widget_default_open: expandIfValuesSet
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

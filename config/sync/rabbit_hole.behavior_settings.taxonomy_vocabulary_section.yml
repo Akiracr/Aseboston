@@ -1,0 +1,14 @@
+uuid: b57bdadc-f1f0-4caf-9f6d-1abdc0a15d84
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.section
+id: taxonomy_vocabulary_section
+entity_type_id: taxonomy_vocabulary
+entity_id: section
+action: page_redirect
+allow_override: 0
+redirect: '<front>'
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -1,0 +1,19 @@
+uuid: 361ff7be-d69b-414a-8b6b-fae370660123
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.contact_data
+id: paragraph.contact_data.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: contact_data
+label: Título
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

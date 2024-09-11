@@ -1,0 +1,19 @@
+uuid: b7f4d2de-10ce-48bf-96e8-bd85a638158c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_value
+    - paragraphs.paragraphs_type.operating_hour
+id: paragraph.operating_hour.field_value
+field_name: field_value
+entity_type: paragraph
+bundle: operating_hour
+label: Horario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

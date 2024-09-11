@@ -1,0 +1,23 @@
+uuid: 4c5ce0ea-31db-4568-b933-47694415f603
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_old_id
+    - node.type.gallery
+id: node.gallery.field_old_id
+field_name: field_old_id
+entity_type: node
+bundle: gallery
+label: 'Old id'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

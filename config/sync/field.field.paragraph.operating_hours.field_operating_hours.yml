@@ -1,0 +1,49 @@
+uuid: fcf16166-db96-4ae4-b809-ddcaec3aa5ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_operating_hours
+    - paragraphs.paragraphs_type.operating_hour
+    - paragraphs.paragraphs_type.operating_hours
+  module:
+    - entity_reference_revisions
+id: paragraph.operating_hours.field_operating_hours
+field_name: field_operating_hours
+entity_type: paragraph
+bundle: operating_hours
+label: Horarios
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      operating_hour: operating_hour
+    negate: 0
+    target_bundles_drag_drop:
+      file_for_download:
+        weight: 8
+        enabled: false
+      image:
+        weight: 9
+        enabled: false
+      link_w_image:
+        weight: 10
+        enabled: false
+      operating_hour:
+        weight: 11
+        enabled: true
+      operating_hours:
+        weight: 12
+        enabled: false
+      text:
+        weight: 13
+        enabled: false
+      video:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

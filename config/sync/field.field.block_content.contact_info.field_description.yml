@@ -1,0 +1,24 @@
+uuid: 98de2ebc-ada2-405c-a136-d21a95191a9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_info
+    - field.storage.block_content.field_description
+    - filter.format.ckeditor_5
+  module:
+    - text
+id: block_content.contact_info.field_description
+field_name: field_description
+entity_type: block_content
+bundle: contact_info
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - ckeditor_5
+field_type: text_long

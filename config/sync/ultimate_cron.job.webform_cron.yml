@@ -1,0 +1,17 @@
+uuid: d3f4c922-42a6-46b1-8386-31337ee2771e
+langcode: es
+status: true
+dependencies:
+  module:
+    - webform
+title: 'Manejador de cron por defecto'
+id: webform_cron
+weight: 0
+module: webform
+callback: webform_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

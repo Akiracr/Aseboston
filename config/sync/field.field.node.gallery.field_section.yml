@@ -1,0 +1,33 @@
+uuid: d3f645f6-cdaa-4a04-8d43-2a5cef800efe
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.gallery
+    - taxonomy.vocabulary.section
+  content:
+    - 'taxonomy_term:section:443752e2-63da-4a5a-b4ab-ffa9251b957e'
+id: node.gallery.field_section
+field_name: field_section
+entity_type: node
+bundle: gallery
+label: Encabezado
+description: 'Encabezado a utilizar'
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 443752e2-63da-4a5a-b4ab-ffa9251b957e
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      section: section
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

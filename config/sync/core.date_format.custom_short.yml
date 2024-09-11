@@ -1,0 +1,8 @@
+uuid: cf04227b-930f-4eee-bf7e-28d10ea3934d
+langcode: es
+status: true
+dependencies: {  }
+id: custom_short
+label: Corto
+locked: false
+pattern: d/m/Y

@@ -2,7 +2,7 @@ _core:
   default_config_hash: YN65VBn9ms3wK02hGcMVrpM8ejxTxsUJgDXfF60Brcs
 langcode: es
 applies_admin_routes: true
-include_invalid_paths: false
+include_invalid_paths: true
 excluded_paths: ''
 replaced_titles: ''
 custom_paths: ''
@@ -19,7 +19,7 @@ menu_title_preferred_menu: ''
 remove_repeated_segments: true
 language_path_prefix_as_segment: false
 absolute_paths: false
-hide_single_home_item: false
+hide_single_home_item: true
 term_hierarchy: false
 use_site_title: false
 add_structured_data_json_ld: false

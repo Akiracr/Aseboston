@@ -1,0 +1,32 @@
+uuid: acf34942-4be2-4a52-980d-0dbb5a2ffef5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.operating_hour.field_title
+    - field.field.paragraph.operating_hour.field_value
+    - paragraphs.paragraphs_type.operating_hour
+id: paragraph.operating_hour.default
+targetEntityType: paragraph
+bundle: operating_hour
+mode: default
+content:
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_value:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

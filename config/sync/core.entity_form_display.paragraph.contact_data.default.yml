@@ -1,0 +1,71 @@
+uuid: f94502a7-5ccf-43b1-a580-eb1f000f4235
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_data.field_email
+    - field.field.paragraph.contact_data.field_link
+    - field.field.paragraph.contact_data.field_short_description
+    - field.field.paragraph.contact_data.field_telephone
+    - field.field.paragraph.contact_data.field_title
+    - paragraphs.paragraphs_type.contact_data
+  module:
+    - link_attributes
+    - telephone
+id: paragraph.contact_data.default
+targetEntityType: paragraph
+bundle: contact_data
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_link:
+    type: link_attributes
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        target: true
+        rel: true
+        class: true
+        id: false
+        name: false
+        accesskey: false
+        aria-label: false
+        title: false
+      widget_default_open: expandIfValuesSet
+    third_party_settings: {  }
+  field_short_description:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_telephone:
+    type: telephone_default
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

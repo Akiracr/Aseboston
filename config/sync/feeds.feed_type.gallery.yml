@@ -1,0 +1,159 @@
+uuid: 94ae31b2-c9d1-4385-a7d4-6b9b927014e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_category
+    - field.field.node.gallery.field_date
+    - field.field.node.gallery.field_image
+    - field.field.node.gallery.field_images
+    - field.field.node.gallery.field_old_id
+    - node.type.gallery
+  module:
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      a683ed8f-75ac-4b86-a68f-d8c12da879ae:
+        separator: '@'
+        limit: null
+        uuid: a683ed8f-75ac-4b86-a68f-d8c12da879ae
+        plugin: explode
+        source: images
+        weight: 0
+        label: Explode
+label: Gallery
+id: gallery
+description: ''
+help: ''
+import_period: 3600
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: gallery
+  langcode: es
+  insert_new: 1
+  update_existing: 1
+  update_non_existent: _keep
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 1
+custom_sources:
+  nid:
+    value: _nid
+    label: _nid
+    machine_name: nid
+    type: csv
+  title:
+    value: _title
+    label: _title
+    machine_name: title
+    type: csv
+  body:
+    value: _body
+    label: _body
+    machine_name: body
+    type: csv
+  date:
+    value: _date
+    label: _date
+    machine_name: date
+    type: csv
+  category:
+    value: _category
+    label: _category
+    machine_name: category
+    type: csv
+  image:
+    value: _image
+    label: _image
+    machine_name: image
+    type: csv
+  images:
+    value: _images
+    label: _images
+    machine_name: images
+    type: csv
+mappings:
+  -
+    target: field_old_id
+    map:
+      value: nid
+    settings:
+      language: null
+    unique:
+      value: 1
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: body
+    map:
+      value: body
+      summary: ''
+    settings:
+      language: ''
+      format: ckeditor_5
+  -
+    target: field_date
+    map:
+      value: date
+    settings:
+      language: ''
+      timezone: America/Costa_Rica
+  -
+    target: field_category
+    map:
+      target_id: category
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      autocreate_bundle: events_categories
+  -
+    target: field_image
+    map:
+      target_id: image
+      alt: ''
+      title: ''
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+      autocreate_bundle: false
+  -
+    target: field_images
+    map:
+      target_id: images
+      alt: ''
+      title: ''
+    settings:
+      existing: 2
+      language: null
+      reference_by: filename
+      autocreate: false
+      autocreate_bundle: false

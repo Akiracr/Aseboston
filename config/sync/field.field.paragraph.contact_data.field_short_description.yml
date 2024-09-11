@@ -1,0 +1,19 @@
+uuid: b4d961b1-0eaa-4acf-a2d3-b83b0d2363f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_short_description
+    - paragraphs.paragraphs_type.contact_data
+id: paragraph.contact_data.field_short_description
+field_name: field_short_description
+entity_type: paragraph
+bundle: contact_data
+label: 'Descripción corta'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,232 @@
+uuid: b5a1ca1c-43fa-483c-8fd9-dc401a986aac
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.compact
+    - field.field.paragraph.contact_data.field_email
+    - field.field.paragraph.contact_data.field_link
+    - field.field.paragraph.contact_data.field_short_description
+    - field.field.paragraph.contact_data.field_telephone
+    - field.field.paragraph.contact_data.field_title
+    - paragraphs.paragraphs_type.contact_data
+  module:
+    - aseboston_misc
+    - ds
+    - field_group
+    - link
+    - telephone
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - group_h2
+        - field_title
+        - field_short_description
+        - field_telephone
+        - field_link
+        - field_email
+  field_group:
+    group_h2:
+      children:
+        - field_title
+        - field_short_description
+      label: Title
+      parent_name: ''
+      region: ds_content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'h5 contact-data--title'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: paragraph.contact_data.compact
+targetEntityType: paragraph
+bundle: contact_data
+mode: compact
+content:
+  field_email:
+    type: email_formatter
+    label: above
+    settings:
+      mailto: '1'
+      truncate: '40'
+      text: ''
+      HTML: ''
+      icon: none
+      iconlink: '1'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: Email
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 5
+    region: ds_content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 4
+    region: ds_content
+  field_short_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ' | '
+            suffix: ''
+    weight: 2
+    region: ds_content
+  field_telephone:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 3
+    region: ds_content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+hidden: {  }

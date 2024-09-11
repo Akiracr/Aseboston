@@ -1,0 +1,11 @@
+uuid: 3634e31d-25ba-4111-9d9e-97761f527e19
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.welcome
+label: Bienvenida
+description: ''
+targetEntityType: block_content
+cache: true

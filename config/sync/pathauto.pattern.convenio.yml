@@ -1,0 +1,22 @@
+uuid: d24fd350-2f7f-4a75-8a19-945a6f393a24
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: convenio
+label: Convenio
+type: 'canonical_entities:node'
+pattern: 'convenios/[node:field_category:entity:name]/[node:title]'
+selection_criteria:
+  075844fc-6bed-4f8c-8a17-5d3cf5faaea1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 075844fc-6bed-4f8c-8a17-5d3cf5faaea1
+    context_mapping:
+      node: node
+    bundles:
+      agreement: agreement
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,38 @@
+uuid: 74fdc5f2-5403-49d2-87d8-2070cb061710
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_left_image
+    - node.type.slide
+  module:
+    - image
+id: node.slide.field_left_image
+field_name: field_left_image
+entity_type: node
+bundle: slide
+label: 'Imagen a la derecha'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: 660x491
+  min_resolution: 660x491
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

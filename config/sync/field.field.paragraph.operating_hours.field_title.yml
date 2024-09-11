@@ -1,0 +1,19 @@
+uuid: c5002f23-608d-4506-8506-e1d42c2a4fc9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.operating_hours
+id: paragraph.operating_hours.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: operating_hours
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

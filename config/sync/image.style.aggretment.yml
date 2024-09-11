@@ -1,0 +1,15 @@
+uuid: a52c547e-a277-4ca1-b81a-72bfd07bcc1a
+langcode: es
+status: true
+dependencies: {  }
+name: aggretment
+label: Aggretment
+effects:
+  7aa31edb-4796-4e39-a95f-45b11740859a:
+    uuid: 7aa31edb-4796-4e39-a95f-45b11740859a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 467
+      height: 467
+      anchor: center-center

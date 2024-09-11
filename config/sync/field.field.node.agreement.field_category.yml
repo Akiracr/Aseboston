@@ -1,0 +1,29 @@
+uuid: fec6bc8c-c8fd-443a-bdcc-e2a8e4575a7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.agreement
+    - taxonomy.vocabulary.categories_of_agreements
+id: node.agreement.field_category
+field_name: field_category
+entity_type: node
+bundle: agreement
+label: Categoría
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories_of_agreements: categories_of_agreements
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

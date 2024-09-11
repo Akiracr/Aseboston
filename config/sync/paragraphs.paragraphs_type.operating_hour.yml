@@ -1,0 +1,10 @@
+uuid: bcbecec3-120b-402d-8b73-b7f5b8f9e549
+langcode: es
+status: true
+dependencies: {  }
+id: operating_hour
+label: Horario
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

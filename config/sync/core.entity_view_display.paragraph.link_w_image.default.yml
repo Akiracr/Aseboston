@@ -1,0 +1,68 @@
+uuid: b7557ca4-404e-4c5d-90dc-4776573dce74
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_w_image.field_image
+    - field.field.paragraph.link_w_image.field_link
+    - paragraphs.paragraphs_type.link_w_image
+  module:
+    - ds
+    - field_group
+    - image
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - group_link
+        - field_image
+  field_group:
+    group_link:
+      children:
+        - field_image
+      label: Link
+      parent_name: ''
+      region: ds_content
+      weight: 0
+      format_type: link
+      format_settings:
+        classes: 'd-inline-block me-3'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        target: field_link
+        custom_uri: ''
+        target_attribute: default
+id: paragraph.link_w_image.default
+targetEntityType: paragraph
+bundle: link_w_image
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+hidden:
+  field_link: true

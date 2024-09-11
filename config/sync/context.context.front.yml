@@ -1,0 +1,106 @@
+uuid: 063fad90-d055-4803-9c10-615d451e8e0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  content:
+    - 'block_content:block_with_image:1c05fc36-05a7-4bb2-9015-57dccac48282'
+    - 'block_content:block_with_image:55e46fba-b53e-422a-a450-249cab2dd622'
+    - 'block_content:block_with_image:6a70917c-7319-4e82-9b8e-eb0d6475b897'
+  module:
+    - block_content
+    - system
+    - views
+label: Inicio
+name: front
+group: General
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    uuid: 8d1a78cd-d85f-410d-b7e6-2d7e8a0497a2
+    context_mapping: {  }
+    pages: '<front>'
+reactions:
+  blocks:
+    id: blocks
+    uuid: ccd61521-7e6c-4865-a45b-d0545e6d39a2
+    blocks:
+      6a1b6d38-6b55-4418-84bb-335cdf0d7e23:
+        uuid: 6a1b6d38-6b55-4418-84bb-335cdf0d7e23
+        id: 'views_block:slider-block_1'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: highlighted
+        weight: '0'
+        custom_id: views_block_slider_block_1
+        theme: aseboston
+        css_class: ''
+        unique: 0
+        context_id: front
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+      51eab281-59d1-4c16-8007-63565b1ce2e6:
+        uuid: 51eab281-59d1-4c16-8007-63565b1ce2e6
+        id: 'block_content:6a70917c-7319-4e82-9b8e-eb0d6475b897'
+        label: Bienvenida
+        provider: block_content
+        label_display: '0'
+        region: featured_top
+        weight: '-1'
+        custom_id: block_content_6a70917c_7319_4e82_9b8e_eb0d6475b897
+        theme: aseboston
+        css_class: cfs-18
+        unique: 0
+        context_id: front
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: welcome
+        third_party_settings: {  }
+      34a3e8dc-a048-42cd-8b1b-3fa80eea6c5a:
+        uuid: 34a3e8dc-a048-42cd-8b1b-3fa80eea6c5a
+        id: 'block_content:55e46fba-b53e-422a-a450-249cab2dd622'
+        label: MallASEBoston
+        provider: block_content
+        label_display: '0'
+        region: content
+        weight: '0'
+        custom_id: block_content_55e46fba_b53e_422a_a450_249cab2dd622
+        theme: aseboston
+        css_class: cfs-18
+        unique: 0
+        context_id: front
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: mallaseboston
+        third_party_settings: {  }
+      5287309b-0cb7-47a7-bc0e-81c0444ad451:
+        uuid: 5287309b-0cb7-47a7-bc0e-81c0444ad451
+        id: 'block_content:1c05fc36-05a7-4bb2-9015-57dccac48282'
+        label: '¿Por qué ser  asociado de ASEBoston?'
+        provider: block_content
+        label_display: '0'
+        region: featured_bottom_first
+        weight: '-1'
+        custom_id: block_content_1c05fc36_05a7_4bb2_9015_57dccac48282
+        theme: aseboston
+        css_class: cfs-18
+        unique: 0
+        context_id: front
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: why_aseboston
+        third_party_settings: {  }
+    include_default_blocks: 0
+    saved: false
+weight: -3

@@ -1,0 +1,81 @@
+uuid: 723ea8ba-7927-4235-b53e-7dc8071afa4f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.svg_image.field_svg_imgage
+    - paragraphs.paragraphs_type.svg_image
+  module:
+    - ds
+    - svg_image_field
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - field_svg_imgage
+id: paragraph.svg_image.default
+targetEntityType: paragraph
+bundle: svg_image
+mode: default
+content:
+  field_svg_imgage:
+    type: svg_image_field_formatter
+    label: hidden
+    settings:
+      inline: false
+      apply_dimensions: true
+      width: 297
+      height: 84
+      enable_alt: true
+      enable_title: false
+      link: ''
+      force_fill: false
+      sanitize: true
+      sanitize_remote: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 0
+    region: ds_content
+hidden: {  }

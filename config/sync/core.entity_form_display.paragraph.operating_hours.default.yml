@@ -1,0 +1,46 @@
+uuid: fb584626-4f85-4e0c-a0bd-77b733f5e033
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.operating_hours.field_operating_hours
+    - field.field.paragraph.operating_hours.field_title
+    - paragraphs.paragraphs_type.operating_hours
+  module:
+    - paragraphs
+id: paragraph.operating_hours.default
+targetEntityType: paragraph
+bundle: operating_hours
+mode: default
+content:
+  field_operating_hours:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Horario
+      title_plural: Horarios
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: operating_hour
+      features:
+        add_above: add_above
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: '0'
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

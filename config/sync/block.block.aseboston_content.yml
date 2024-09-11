@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   module:
+    - context
     - system
   theme:
     - aseboston
@@ -19,4 +20,8 @@ settings:
   label: 'Contenido principal de la página'
   label_display: '0'
   provider: system
-visibility: {  }
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: true
+    pages: /contacto

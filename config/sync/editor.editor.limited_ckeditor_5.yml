@@ -1,0 +1,31 @@
+uuid: 4156280e-4f3f-445a-841f-02902209104b
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.limited_ckeditor_5
+  module:
+    - ckeditor5
+format: limited_ckeditor_5
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - showBlocks
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading1
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+image_upload:
+  status: false

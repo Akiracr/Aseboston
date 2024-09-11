@@ -1,0 +1,152 @@
+uuid: f6ab6a62-ffdf-4cb5-8ba2-e7f1573dd343
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu
+    - views.view.sections
+  content:
+    - 'block_content:contact_info:e6bc4686-aaea-45d3-af9c-87b18ea856ff'
+  module:
+    - block_content
+    - context_groups
+    - system
+    - views
+third_party_settings:
+  context_groups:
+    left_side:
+      name: left_side
+      label: 'Left side'
+      region: content
+      parent: row
+      weight: '2'
+      theme: aseboston
+      class: 'col-xs-12 col-sm-6 col-xxl-5'
+      all_parents:
+        - row
+    right_site:
+      name: right_site
+      label: 'Right site'
+      region: content
+      parent: row
+      weight: '3'
+      theme: aseboston
+      class: 'col-xs-12 col-sm-6 col-xxl-5'
+      all_parents:
+        - row
+    row:
+      name: row
+      label: Row
+      region: content
+      parent: ''
+      weight: '0'
+      theme: aseboston
+      class: 'row justify-content-between'
+      all_parents: {  }
+label: Contacto
+name: contacto
+group: General
+description: 'Formulario de contacto'
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    uuid: aed650d8-bed2-470e-9f55-aaead84ffac5
+    context_mapping: {  }
+    pages: /contacto
+reactions:
+  blocks:
+    id: blocks
+    uuid: 06efec84-0867-401e-8c2b-ae27937c0530
+    blocks:
+      de5fda72-9b40-455a-acad-992c04ce02ae:
+        uuid: de5fda72-9b40-455a-acad-992c04ce02ae
+        id: 'block_content:e6bc4686-aaea-45d3-af9c-87b18ea856ff'
+        label: 'Horarios de atención'
+        provider: block_content
+        label_display: '0'
+        region: content
+        weight: '1'
+        custom_id: block_content_e6bc4686_aaea_45d3_af9c_87b18ea856ff
+        theme: aseboston
+        css_class: contact-content
+        unique: 0
+        context_id: contacto
+        context_mapping: {  }
+        status: true
+        info: ''
+        view_mode: full
+        parent_wrapper:
+          parent: left_side
+        all_parents:
+          - row
+          - left_side
+        third_party_settings: {  }
+      76775c77-77bb-414e-9b29-a595047cb193:
+        uuid: 76775c77-77bb-414e-9b29-a595047cb193
+        id: 'system_menu_block:social-menu'
+        label: Síguenos
+        provider: system
+        label_display: visible
+        region: content
+        weight: '2'
+        custom_id: system_menu_block_social_menu
+        theme: aseboston
+        css_class: 'contact-rrss mt-5'
+        unique: 0
+        context_id: contacto
+        context_mapping: {  }
+        level: '1'
+        depth: '0'
+        expand_all_items: 0
+        parent_wrapper:
+          parent: left_side
+        all_parents:
+          - row
+          - left_side
+        third_party_settings: {  }
+      dfce3499-c212-4197-b129-cb05615d4b75:
+        uuid: dfce3499-c212-4197-b129-cb05615d4b75
+        id: system_main_block
+        label: 'Contenido principal de la página'
+        provider: system
+        label_display: '0'
+        region: content
+        weight: '3'
+        custom_id: system_main_block
+        theme: aseboston
+        css_class: ''
+        unique: 0
+        context_id: contacto
+        context_mapping: {  }
+        parent_wrapper:
+          parent: right_site
+        all_parents:
+          - row
+          - right_site
+        third_party_settings: {  }
+      0fd22c21-1702-4522-906e-26457d534bbc:
+        uuid: 0fd22c21-1702-4522-906e-26457d534bbc
+        id: 'views_block:sections-block_1'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: breadcrumb
+        weight: '0'
+        custom_id: views_block_sections_block_1
+        theme: aseboston
+        css_class: site-title-image
+        unique: 0
+        context_id: contacto
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        parent_wrapper:
+          parent: ''
+        all_parents: {  }
+        third_party_settings: {  }
+    include_default_blocks: 0
+    saved: false
+weight: -2

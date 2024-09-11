@@ -1,0 +1,26 @@
+uuid: adede4b1-fbe6-4a00-b806-c8bb60b117a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.svg_image.field_svg_imgage
+    - paragraphs.paragraphs_type.svg_image
+  module:
+    - svg_image_field
+id: paragraph.svg_image.default
+targetEntityType: paragraph
+bundle: svg_image
+mode: default
+content:
+  field_svg_imgage:
+    type: svg_image_field_widget
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_max_width: 300
+      preview_image_max_height: 300
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

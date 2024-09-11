@@ -1,0 +1,67 @@
+uuid: 1b595486-8831-4982-a67d-f0e2f926cd2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_info
+    - field.field.block_content.contact_info.field_contact_data
+    - field.field.block_content.contact_info.field_description
+    - field.field.block_content.contact_info.field_operating_hours
+  module:
+    - ds
+    - entity_reference_revisions
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - field_description
+        - field_operating_hours
+        - field_contact_data
+id: block_content.contact_info.default
+targetEntityType: block_content
+bundle: contact_info
+mode: default
+content:
+  field_contact_data:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: ds_content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: ds_content
+  field_operating_hours:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 1c5b236f-0159-404e-9c95-2c9188d4035f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: gallery
+label: Galería
+type: 'canonical_entities:node'
+pattern: 'conozcanos/galerias/[node:title]'
+selection_criteria:
+  743b3f7d-4529-44e5-8993-c0c0a2b5cdd4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 743b3f7d-4529-44e5-8993-c0c0a2b5cdd4
+    context_mapping:
+      node: node
+    bundles:
+      gallery: gallery
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,47 @@
+uuid: f3a7186e-590d-43c2-bfe2-6e5deb032b9d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.sections
+  module:
+    - views
+label: Galeries
+name: galleries
+group: General
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    uuid: ec9130b3-7e97-41a9-9618-31d72eb719a8
+    context_mapping: {  }
+    view_inclusion:
+      view-galleries-page_1: view-galleries-page_1
+reactions:
+  blocks:
+    id: blocks
+    uuid: 524e3c82-9b97-4452-a28e-4e9b9f95811c
+    blocks:
+      21a0f13d-cb17-47d9-a885-7a7e57eb5bbb:
+        uuid: 21a0f13d-cb17-47d9-a885-7a7e57eb5bbb
+        id: 'views_block:sections-block_5'
+        label: ''
+        provider: views
+        label_display: '0'
+        region: breadcrumb
+        weight: '0'
+        custom_id: views_block_sections_block_5
+        theme: aseboston
+        css_class: site-title-image
+        unique: 0
+        context_id: galleries
+        context_mapping: {  }
+        views_label: ''
+        items_per_page: none
+        third_party_settings: {  }
+    include_default_blocks: 1
+    saved: false
+weight: 0

@@ -1,0 +1,52 @@
+uuid: 1702b872-f39c-4079-bfbd-d4ba15ecd227
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_info
+    - field.storage.block_content.field_contact_data
+    - paragraphs.paragraphs_type.contact_data
+  module:
+    - entity_reference_revisions
+id: block_content.contact_info.field_contact_data
+field_name: field_contact_data
+entity_type: block_content
+bundle: contact_info
+label: 'Información de contacto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      contact_data: contact_data
+    negate: 0
+    target_bundles_drag_drop:
+      contact_data:
+        weight: 9
+        enabled: true
+      file_for_download:
+        weight: 10
+        enabled: false
+      image:
+        weight: 11
+        enabled: false
+      link_w_image:
+        weight: 12
+        enabled: false
+      operating_hour:
+        weight: 13
+        enabled: false
+      operating_hours:
+        weight: 14
+        enabled: false
+      text:
+        weight: 15
+        enabled: false
+      video:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 9a738925-d154-414c-9321-5d46cb73c17e
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: convenios
+label: Convenios
+type: 'canonical_entities:taxonomy_term'
+pattern: '/convenios/[term:name]'
+selection_criteria:
+  e3592ee8-f31e-4ef6-8c28-15e10a4bd085:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: e3592ee8-f31e-4ef6-8c28-15e10a4bd085
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      categories_of_agreements: categories_of_agreements
+selection_logic: and
+weight: -5
+relationships: {  }

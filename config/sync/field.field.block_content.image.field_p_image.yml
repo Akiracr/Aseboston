@@ -1,0 +1,57 @@
+uuid: 9dd4f023-85ea-46f3-bfc6-31970b5f59b8
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.image
+    - field.storage.block_content.field_p_image
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.svg_image
+  module:
+    - entity_reference_revisions
+id: block_content.image.field_p_image
+field_name: field_p_image
+entity_type: block_content
+bundle: image
+label: Imagen
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image: image
+      svg_image: svg_image
+    negate: 0
+    target_bundles_drag_drop:
+      contact_data:
+        weight: 10
+        enabled: false
+      file_for_download:
+        weight: 11
+        enabled: false
+      image:
+        weight: 12
+        enabled: true
+      link_w_image:
+        weight: 13
+        enabled: false
+      operating_hour:
+        weight: 14
+        enabled: false
+      operating_hours:
+        weight: 15
+        enabled: false
+      svg_image:
+        weight: 16
+        enabled: true
+      text:
+        weight: 17
+        enabled: false
+      video:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

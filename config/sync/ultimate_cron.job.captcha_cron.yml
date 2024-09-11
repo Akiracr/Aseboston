@@ -1,0 +1,17 @@
+uuid: 48d03bc7-e9a4-4a1d-836c-45c49e46f97e
+langcode: es
+status: true
+dependencies:
+  module:
+    - captcha
+title: 'Manejador de cron por defecto'
+id: captcha_cron
+weight: 0
+module: captcha
+callback: captcha_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

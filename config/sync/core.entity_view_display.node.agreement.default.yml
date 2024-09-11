@@ -1,0 +1,534 @@
+uuid: 7562dce6-74e1-4b98-a4f9-15778ca187c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agreement.body
+    - field.field.node.agreement.feeds_item
+    - field.field.node.agreement.field_category
+    - field.field.node.agreement.field_email
+    - field.field.node.agreement.field_facebook
+    - field.field.node.agreement.field_image
+    - field.field.node.agreement.field_instagram
+    - field.field.node.agreement.field_link
+    - field.field.node.agreement.field_old_id
+    - field.field.node.agreement.field_phone
+    - node.type.agreement
+  module:
+    - ds
+    - field_group
+    - image
+    - link
+    - telephone
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: aseboston
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - group_wrapper
+        - group_row
+        - group_regresar_al_listado
+        - group_left
+        - field_image
+        - group_right
+        - node_title
+        - body
+        - group_aggretment_info_wrap
+        - field_phone
+        - field_email
+        - field_link
+        - field_facebook
+        - field_instagram
+        - group_link_wrapper
+        - group_go_back
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 23
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          'link class': ''
+          link_target: ''
+          wrapper: div
+          class: 'h4 aggretment-title'
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+  field_group:
+    group_wrapper:
+      children:
+        - group_row
+      label: Wrapper
+      parent_name: ''
+      region: ds_content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: 'aggretment-list-item aggretment-content'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_right:
+      children:
+        - node_title
+        - body
+        - group_aggretment_info_wrap
+      label: Right
+      parent_name: group_row
+      region: ds_content
+      weight: 22
+      format_type: html_element
+      format_settings:
+        classes: 'col-sm-6 col-md-8 col-lg-9'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_left:
+      children:
+        - field_image
+      label: Left
+      parent_name: group_row
+      region: ds_content
+      weight: 21
+      format_type: html_element
+      format_settings:
+        classes: 'col-sm-6 col-md-4 col-lg-3'
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_row:
+      children:
+        - group_left
+        - group_right
+      label: Row
+      parent_name: group_wrapper
+      region: ds_content
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_aggretment_info_wrap:
+      children:
+        - field_phone
+        - field_email
+        - field_link
+        - field_facebook
+        - field_instagram
+        - group_link_wrapper
+      label: aggretment-info-wrap
+      parent_name: group_right
+      region: ds_content
+      weight: 25
+      format_type: html_element
+      format_settings:
+        classes: aggretment-info-wrap
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_go_back:
+      children:
+        - group_regresar_al_listado
+      label: 'Go back'
+      parent_name: group_link_wrapper
+      region: ds_content
+      weight: 32
+      format_type: link
+      format_settings:
+        classes: 'btn btn-info btn-sm'
+        show_empty_fields: true
+        id: ''
+        label_as_html: true
+        target: field_category
+        custom_uri: ''
+        target_attribute: default
+    group_regresar_al_listado:
+      children: {  }
+      label: 'Regresar al listado'
+      parent_name: group_go_back
+      region: ds_content
+      weight: 20
+      format_type: markup
+      format_settings:
+        markup:
+          value: 'Regresar al listado'
+          format: email_html
+        show_empty_fields: '1'
+        id: ''
+        classes: ''
+        label_as_html: 0
+    group_link_wrapper:
+      children:
+        - group_go_back
+      label: 'Link Wrapper'
+      parent_name: group_aggretment_info_wrap
+      region: ds_content
+      weight: 31
+      format_type: html_element
+      format_settings:
+        classes: text-end
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.agreement.default
+targetEntityType: node
+bundle: agreement
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: div
+            ow-cl: aggretment-body
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 24
+    region: ds_content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: mb-2
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: p
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 27
+    region: ds_content
+  field_facebook:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: mb-2
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 29
+    region: ds_content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: div
+            fis-cl: img-wrap
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 22
+    region: ds_content
+  field_instagram:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: mb-2
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 30
+    region: ds_content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: mb-2
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 28
+    region: ds_content
+  field_phone:
+    type: telephone_link
+    label: above
+    settings:
+      title: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: true
+            lbw-el: strong
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: true
+            ow: true
+            ow-el: div
+            ow-cl: mb-2
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 26
+    region: ds_content
+hidden:
+  feeds_item: true
+  field_category: true
+  field_old_id: true
+  langcode: true
+  links: true

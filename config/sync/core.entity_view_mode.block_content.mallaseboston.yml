@@ -1,0 +1,11 @@
+uuid: ad8a01d6-f49b-4ba6-a36f-d306a5e9101e
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.mallaseboston
+label: MallASEBoston
+description: ''
+targetEntityType: block_content
+cache: true

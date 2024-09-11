@@ -1,0 +1,26 @@
+uuid: ca2bf1e8-7a20-42d9-bad4-58f5a1355f92
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: slider
+label: Slider
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 3
+  act_as_queue: false
+  reverse: false

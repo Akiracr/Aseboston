@@ -1,0 +1,14 @@
+uuid: 637bf45f-600a-45c0-8e33-bdf2e6feaa62
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node_type_slide
+entity_type_id: node_type
+entity_id: slide
+action: page_redirect
+allow_override: 0
+redirect: '<front>'
+redirect_code: 301
+redirect_fallback_action: access_denied
