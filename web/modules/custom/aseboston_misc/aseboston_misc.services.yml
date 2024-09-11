@@ -1,0 +1,5 @@
+services:
+  aseboston_misc.route_subscriber:
+    class: Drupal\aseboston_misc\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

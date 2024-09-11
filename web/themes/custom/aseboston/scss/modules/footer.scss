@@ -7,9 +7,6 @@
     color: $white;
   }
   .nav-vertical {
-    .h5 {
-      padding-left: 16px;
-    }
     .nav{
       &,
       .nav-item {
@@ -19,6 +16,7 @@
     .nav-link {
       display: inline;
       text-transform: uppercase;
+      padding-left: 0;
       &:hover,
       &:focus {
         text-decoration: underline;

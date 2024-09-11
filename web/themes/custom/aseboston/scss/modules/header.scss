@@ -21,6 +21,16 @@
   }
 }
 
+.site-title-image {
+  > :after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right, #1f71b7, #0075af, #0077a3, #007896, #007889, #007982, #007a79, #007a6f, #007c67, #007d5c, #007e4f, #077e40);
+  }
+}
+
 .breadcrumb--section {
   position: relative;
   text-align: center;

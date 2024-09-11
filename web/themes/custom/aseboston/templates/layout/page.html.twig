@@ -130,7 +130,7 @@
     </header>
     {% if page.highlighted %}
       <div class="highlighted">
-        <aside class="{{ container }} section clearfix" role="complementary">
+        <aside class="section clearfix" role="complementary">
           {{ page.highlighted }}
         </aside>
       </div>
@@ -144,9 +144,23 @@
         </div>
       {% endblock %}
     {% endif %}
-    <div class="breadcrumb--section">
-      {{ page.breadcrumb }}
-    </div>
+
+    {% if is_front == false %}
+      <div class="breadcrumb--section">
+        {{ page.breadcrumb }}
+      </div>
+    {% endif %}
+
+    {% if (page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third) and is_front == true %}
+      <div class="featured-bottom">
+        <aside class="{{ container }} clearfix" role="complementary">
+          {{ page.featured_bottom_first }}
+          {{ page.featured_bottom_second }}
+          {{ page.featured_bottom_third }}
+        </aside>
+      </div>
+    {% endif %}
+
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
         <div id="main" class="{{ container }}">
@@ -175,7 +189,7 @@
         </div>
       {% endblock %}
     </div>
-    {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
+    {% if (page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third) and is_front == false %}
       <div class="featured-bottom">
         <aside class="{{ container }} clearfix" role="complementary">
           {{ page.featured_bottom_first }}

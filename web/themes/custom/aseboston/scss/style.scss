@@ -13,9 +13,36 @@ body {
     background: $gray-1;
 }
 
+.main-content {
+    margin-bottom: 3rem;
+}
+
 b,
 strong {
   font-weight: 800;
+}
+
+.img-wrap {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.img-h-wrap {
+    img {
+        width: auto;
+        max-height: 100%;
+    }
+}
+
+.alert svg {
+    height: 40px;
+}
+
+
+.cfs-18 {
+    font-size: 18px;
 }
 
 /* COLORS

@@ -7,8 +7,14 @@ base theme: bootstrap_barrio
 
 libraries:
   - aseboston/global-styling
+
 libraries-override:
   bootstrap_barrio/global-styling: false
+
+  splide/load:
+    js:
+      js/splide.load.min.js: js/splide.load.min.js
+
 regions:
   top_header: 'Top header'
   top_header_form: 'Top header form'

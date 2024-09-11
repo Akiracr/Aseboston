@@ -1,0 +1,13 @@
+.galllery-item-wrap {
+  @extend .bordered-box;
+  .gallery-title {
+    @extend .h5;
+  }
+  .gallery-date {
+    font-size: 0.9rem;
+    color: $skyblue;
+    strong {
+      font-weight: 700;
+    }
+  }
+}

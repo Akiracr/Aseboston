@@ -123,6 +123,9 @@ class ComposerStaticInit7f462c0e1e81602f821b8b2f59a1a946
         'L' => 
         array (
             'League\\Container\\' => 17,
+            'Laminas\\Stdlib\\' => 15,
+            'Laminas\\Feed\\' => 13,
+            'Laminas\\Escaper\\' => 16,
         ),
         'H' => 
         array (
@@ -418,6 +421,18 @@ class ComposerStaticInit7f462c0e1e81602f821b8b2f59a1a946
         'League\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
+        ),
+        'Laminas\\Stdlib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-stdlib/src',
+        ),
+        'Laminas\\Feed\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-feed/src',
+        ),
+        'Laminas\\Escaper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
         ),
         'Html2Text\\' => 
         array (

@@ -3,5 +3,6 @@ type: module
 description: 'Aseboston misc function.'
 package: MMV
 core_version_requirement: ^10 || ^11
+
 dependencies:
   - drupal:link_attributes_menu_link_content

@@ -1,0 +1,124 @@
+.slider {
+  color: $white;
+  max-width: 100%;
+  overflow: hidden;
+  .splide {
+    padding: 0;
+  }
+  .absolute-container {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .container {
+      height: 100%;
+    }
+  }
+  .row {
+    height: 100%;
+  }
+  .left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    & > * {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+  .right-side {
+    display: flex;
+  }
+  @media (min-width: 75rem) {
+    h1, .h1 {
+        font-size: 4rem;
+    }
+  }
+  button.splide__toggle {
+    width: 30px;
+    height: 33px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: $white;
+    background: transparent;
+    border-color: $white;
+    border-style: solid;
+    border-radius: 8px;
+    svg {
+      fill: $white;
+    }
+  }
+  .splide__arrow {
+    background: transparent;
+    svg {
+      width: 60px;
+      height: 60px;
+      fill: $white;
+    }
+  }
+}
+
+.splide__pagination__page {
+  background: transparent;
+  border: 2px solid $white;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+.splide__pagination__page.is-active {
+  transform: scale(1);
+  background: $white;
+  border-color: $white;
+}
+
+
+.path-frontpage .featured-top {
+  color: $white;
+  background: url(../images/bg/welcome-bg.png) no-repeat;
+  background-size: cover;
+  padding: 5rem 0;
+}
+
+.border-row {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  border: 1px solid $gray-300;
+  overflow: hidden;
+  > div {
+    > div {
+      padding: 2rem;
+    }
+  }
+  .left-side {
+    color: $white;
+    background-image: linear-gradient(to bottom, #1d6fb5, #2161a4, #225493, #214782, #1f3b72);
+  }
+}
+
+.path-frontpage .featured-bottom {
+  color: $white;
+  padding: 5rem 0;
+  background-image: linear-gradient(to right, #1f71b7, #0075af, #0077a3, #007896, #007889, #007982, #007a79, #007a6f, #007c67, #007d5c, #007e4f, #077e40);
+  li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+    min-height: 80px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2.5rem;
+      top: -0.25rem;
+      width: 5rem;
+      height: 5rem;
+      background-repeat: no-repeat;
+      background-image: url('../images/icons/bullet.svg');
+    }
+  }
+}

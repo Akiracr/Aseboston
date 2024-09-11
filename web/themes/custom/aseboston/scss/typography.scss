@@ -26,8 +26,10 @@ $line-height-base:            1.5;
 $line-height-sm:              1.25;
 $line-height-lg:              2;
 
-$h1-font-size:                $font-size-base * 2.5;
-$h2-font-size:                $font-size-base * 2;
+$headings-font-weight: $font-weight-bold;
+
+$h1-font-size:                $font-size-base * 3.4375;
+$h2-font-size:                $font-size-base * 2.375;
 $h3-font-size:                $font-size-base * 1.75;
 $h4-font-size:                $font-size-base * 1.5;
 $h5-font-size:                $font-size-base * 1.25;

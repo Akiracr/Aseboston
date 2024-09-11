@@ -57,8 +57,14 @@
 
 // 8. Add additional custom code here
 @import "mixins";
+@import "modules/global";
 @import "modules/header";
 @import "modules/footer";
+@import "modules/front";
+@import "modules/contact";
+@import "modules/gallery";
+@import "modules/misc";
+@import "modules/aggretments";
 
 // barrio
 @import "barrio";

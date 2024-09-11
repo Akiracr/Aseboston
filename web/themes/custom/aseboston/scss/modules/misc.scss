@@ -1,0 +1,23 @@
+.views-exposed-form {
+  margin: 2rem 0;
+  .flex-wrap {
+    > * {
+      margin-right: 1.5rem;
+    }
+  }
+  label {
+    margin-block: 0.5rem;
+  }
+}
+
+a {
+  .img-wrap {
+    background: $skyblue;
+  }
+  &:hover:not(.btn) {
+    text-decoration: underline;
+    .img-wrap img {
+      opacity: 0.8;
+    }
+  }
+}

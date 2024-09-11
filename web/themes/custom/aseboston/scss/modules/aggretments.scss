@@ -1,0 +1,18 @@
+.aggretment-list-item {
+  @extend .bordered-box;
+}
+
+.aggretment-content {
+  padding: 1.75rem;
+}
+
+.aggretment-title,
+.aggretment-body {
+  color: $skyblue;
+}
+
+.aggretment-info-wrap {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid $border-color;
+}
