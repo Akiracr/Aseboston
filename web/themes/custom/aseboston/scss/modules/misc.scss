@@ -21,3 +21,18 @@ a {
     }
   }
 }
+
+.pagination {
+  justify-content: center;
+}
+
+.page-item  {
+  margin-right: 0.5rem;
+  .page-link {
+    font-weight: bold;
+    border-radius: $border-radius;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
