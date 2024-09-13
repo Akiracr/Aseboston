@@ -32,16 +32,28 @@
   }
 }
 
+/**
+ * Breadcrumb and title region styles.
+ */
 .breadcrumb--section {
   position: relative;
   text-align: center;
+  overflow-x: hidden;
   &,
   a {
     color: $white;
   }
   img {
-    max-width: 100%;
-    height: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    @include media-breakpoint-down(sm) {
+      height: 250px;
+      min-height: 100%;
+      width: auto;
+    }
+    @include media-breakpoint-up(xxl) {
+      width: 100%;
+    }
   }
   .absolute-container {
     position: absolute;
@@ -64,13 +76,17 @@
   }
   h1 {
     font-weight: 800;
+    margin-top: 0.5rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
+    }
   }
   .breadcrumb {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
   }
-  .breadcrumb-item.active {
+  .breadcrumb-item:last-child {
     &:before {
       font-weight: 400;
     }
