@@ -5,3 +5,52 @@
   height: 100%;
   border-radius: 0.5rem;
 }
+
+/**
+ * CTA: Styles.
+ */
+.cta--block {
+  position: relative;
+  overflow-x: hidden;
+  img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.cta--wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  color: $white;
+  font-weight: bold;
+  p {
+    margin-bottom: 0;
+  }
+  .cta-featured-text {
+    font-size: 1.75rem;
+  }
+  .btn {
+    font-weight: bold;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+    .cta-featured-text {
+      font-size: 2.5rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 1.75rem;
+    .cta-featured-text {
+      font-size: 3rem;
+    }
+  }
+}
