@@ -57,3 +57,16 @@
     }
   }
 }
+
+/**
+ * Buttons.
+ */
+.btn-info {
+  color: $white;
+  &:focus,
+  &:hover {
+    color: $white;
+    background: $skyblue;
+    border-color: $skyblue;
+  }
+}

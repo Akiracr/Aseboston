@@ -1,3 +1,11 @@
+.header {
+  .navbar {
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+
 #navbar-top {
   background: $blue;
   a,
@@ -21,14 +29,10 @@
   }
 }
 
-.breadcrumb--section {
-  margin-bottom: 4rem;
-  &:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 20px;
-    background-image: linear-gradient(to right, #1f71b7, #0075af, #0077a3, #007896, #007889, #007982, #007a79, #007a6f, #007c67, #007d5c, #007e4f, #077e40);
+
+.menu--main {
+  .nav-link {
+    text-transform: uppercase;
   }
 }
 
@@ -39,6 +43,14 @@
   position: relative;
   text-align: center;
   overflow-x: hidden;
+  margin-bottom: 4rem;
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right, #1f71b7, #0075af, #0077a3, #007896, #007889, #007982, #007a79, #007a6f, #007c67, #007d5c, #007e4f, #077e40);
+  }
   &,
   a {
     color: $white;

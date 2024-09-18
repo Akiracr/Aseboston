@@ -9,7 +9,12 @@
 
 .contact-rrss {
   .nav-link {
+    color: $gray-600;
     font-size: 2rem;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
   }
 }
 
