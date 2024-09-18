@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aad1721a007d4dc62a0012ef2a82f98c",
+    "content-hash": "b4ab2f99c373123819a4672ff82cadcc",
     "packages": [
         {
             "name": "akiracr/context_groups",
@@ -1882,26 +1882,26 @@
         },
         {
             "name": "drupal/bootstrap_layouts",
-            "version": "5.3.0",
+            "version": "5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap_layouts.git",
-                "reference": "8.x-5.3"
+                "reference": "8.x-5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-5.3.zip",
-                "reference": "8.x-5.3",
-                "shasum": "0ca3a76594a9483235920964c56effcf0fdfe06e"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_layouts-8.x-5.4.zip",
+                "reference": "8.x-5.4",
+                "shasum": "d4c16870ee830804c54a0bc3c18a114cc2d63966"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^10.3 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.3",
-                    "datestamp": "1675341751",
+                    "version": "8.x-5.4",
+                    "datestamp": "1726493467",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1929,7 +1929,8 @@
             "description": "This module is going to generate layouts with Bootstrap grid system.",
             "homepage": "https://www.drupal.org/project/bootstrap_layouts",
             "support": {
-                "source": "https://git.drupalcode.org/project/bootstrap_layouts"
+                "source": "http://cgit.drupalcode.org/bootstrap_layouts",
+                "issues": "https://www.drupal.org/project/issues/bootstrap_layouts"
             }
         },
         {
