@@ -128,6 +128,11 @@
         {% endif %}
       {% endblock %}
     </header>
+    {% if is_front == false %}
+      <div class="breadcrumb--section">
+        {{ page.breadcrumb }}
+      </div>
+    {% endif %}
     {% if page.highlighted %}
       <div class="highlighted">
         <aside class="section clearfix" role="complementary">
@@ -143,12 +148,6 @@
           </aside>
         </div>
       {% endblock %}
-    {% endif %}
-
-    {% if is_front == false %}
-      <div class="breadcrumb--section">
-        {{ page.breadcrumb }}
-      </div>
     {% endif %}
 
     {% if (page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third) and is_front == true %}

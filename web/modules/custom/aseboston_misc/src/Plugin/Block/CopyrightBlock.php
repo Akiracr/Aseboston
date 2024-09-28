@@ -12,17 +12,10 @@ use Drupal\Core\Url;
  * @Block(
  *   id = "aseboston_misc_copyright_block",
  *   admin_label = @Translation("Copyright"),
- *   category = @Translation("Copyright"),
+ *   category = @Translation("Aseboston Misc"),
  * )
  */
 class CopyrightBlock extends BlockBase {
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getCacheMaxAge() {
-    return 0;
-  }
 
   /**
    * {@inheritdoc}
