@@ -21,7 +21,7 @@ use Drupal\views\Plugin\views\style\StylePluginBase;
  */
 class ViewsBootstrapCarousel extends StylePluginBase {
   /**
-   * Whether or not this style uses a row plugin.
+   * Whether this style uses a row plugin.
    *
    * @var bool
    */
@@ -74,8 +74,7 @@ class ViewsBootstrapCarousel extends StylePluginBase {
       '#weight' => -99,
     ];
 
-    $fields = ['' => $this->t('<None>')];
-    $fields += $this->displayHandler->getFieldLabels(TRUE);
+    $fields = $this->displayHandler->getFieldLabels(TRUE);
 
     $form['interval'] = [
       '#type' => 'number',
@@ -180,9 +179,11 @@ class ViewsBootstrapCarousel extends StylePluginBase {
         '#description' => $this->t('Displaying fields as row content will output the field rows as unformatted values within each carousel item.'),
         '#default_value' => $this->options['display'],
       ];
+
       $form['image'] = [
         '#type' => 'select',
         '#title' => $this->t('Image'),
+        '#empty_option' => $this->t('- None -'),
         '#options' => $fields,
         '#default_value' => $this->options['image'],
         '#states' => [
@@ -195,6 +196,7 @@ class ViewsBootstrapCarousel extends StylePluginBase {
       $form['title'] = [
         '#type' => 'select',
         '#title' => $this->t('Title'),
+        '#empty_option' => $this->t('- None -'),
         '#options' => $fields,
         '#default_value' => $this->options['title'],
         '#states' => [
@@ -207,6 +209,7 @@ class ViewsBootstrapCarousel extends StylePluginBase {
       $form['description'] = [
         '#type' => 'select',
         '#title' => $this->t('Description'),
+        '#empty_option' => $this->t('- None -'),
         '#options' => $fields,
         '#default_value' => $this->options['description'],
         '#states' => [

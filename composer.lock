@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "645290bd6770c4e0d31ca23560d54cb1",
+    "content-hash": "97fcdae58c7259fdac45932e697486f4",
     "packages": [
         {
             "name": "akiracr/context_groups",
@@ -4629,17 +4629,17 @@
         },
         {
             "name": "drupal/views_bootstrap",
-            "version": "5.5.0-rc1",
+            "version": "5.5.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bootstrap.git",
-                "reference": "5.5.0-rc1"
+                "reference": "5.5.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-5.5.0-rc1.zip",
-                "reference": "5.5.0-rc1",
-                "shasum": "63d7eecf7ae4d12a120ccd859c25de7fd7abcb54"
+                "url": "https://ftp.drupal.org/files/projects/views_bootstrap-5.5.0-rc2.zip",
+                "reference": "5.5.0-rc2",
+                "shasum": "ad3a3efd64a8b802a94dbceb8fc84aac2916ad1e"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
@@ -4647,8 +4647,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.5.0-rc1",
-                    "datestamp": "1722551526",
+                    "version": "5.5.0-rc2",
+                    "datestamp": "1727551664",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -10416,7 +10416,7 @@
         "drupal/feeds": 5,
         "drupal/feeds_tamper": 10,
         "drupal/ultimate_cron": 15,
-        "drupal/views_bootstrap": 10
+        "drupal/views_bootstrap": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
