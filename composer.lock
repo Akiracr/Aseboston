@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4ab2f99c373123819a4672ff82cadcc",
+    "content-hash": "645290bd6770c4e0d31ca23560d54cb1",
     "packages": [
         {
             "name": "akiracr/context_groups",
@@ -1761,17 +1761,17 @@
         },
         {
             "name": "drupal/blazy",
-            "version": "3.0.10",
+            "version": "3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "3.0.10"
+                "reference": "3.0.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/blazy-3.0.10.zip",
-                "reference": "3.0.10",
-                "shasum": "8887721c80b9faac7350af4723aae6fb0ffa6927"
+                "url": "https://ftp.drupal.org/files/projects/blazy-3.0.11.zip",
+                "reference": "3.0.11",
+                "shasum": "a68070e36e7471723a0e0ae18050f25a676079d6"
             },
             "require": {
                 "drupal/core": ">=9.4"
@@ -1782,8 +1782,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.10",
-                    "datestamp": "1723362697",
+                    "version": "3.0.11",
+                    "datestamp": "1726993776",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

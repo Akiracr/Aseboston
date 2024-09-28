@@ -62,6 +62,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.4",
         "drupal/animate_css": "^2.1",
+        "drupal/blazy": "^3.0",
         "drupal/bootstrap_barrio": "^5.5",
         "drupal/bootstrap_layouts": "^5.4",
         "drupal/bootstrap_sass": "^5.0",
