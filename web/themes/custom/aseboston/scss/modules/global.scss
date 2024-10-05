@@ -81,3 +81,46 @@
     border-color: $skyblue;
   }
 }
+
+/**
+ * Views exposed form.
+ */
+.views-exposed-form {
+  .btn {
+    border-radius: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+
+/**
+ * Person paragraph.
+ */
+.person-wrap {
+  padding: 1rem;
+  border: 1px solid $gray-300;
+  border-radius: 1rem;
+  img {
+    border-radius: 1rem;
+  }
+  &:hover {
+    background: $skyblue;
+    color: $white;
+  }
+}
+
+/**
+ * Date tap.
+ */
+.date-tap {
+  border-bottom: 2px solid $skyblue;
+  margin-bottom: 1rem;
+  .date-item {
+    color: $white;
+    background: $skyblue;
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
