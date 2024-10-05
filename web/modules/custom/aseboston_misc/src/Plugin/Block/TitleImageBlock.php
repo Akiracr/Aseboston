@@ -99,6 +99,9 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     $node = $this->routeMatch->getParameter('node');
     $webform = $this->routeMatch->getParameter('webform');
     $taxonomy = $this->routeMatch->getParameter('taxonomy_term');
+    $current_route_name = \Drupal::service('current_route_match')->getRouteName();
+
+    //ksm($current_route_name);
 
     // Make sure we have a node and it's of type NodeInterface.
     if ($node instanceof NodeInterface && $node->type->entity->id() == 'agreement') {
@@ -146,18 +149,40 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
         ];
       }
     }
+    elseif ($current_route_name == 'view.galleries.page_1') {
+      $term = $this->getSectionByName('Galerias');
+      if ($term !== FALSE) {
+        $this->generateContent($build, $term);
+      }
+    }
+    elseif ($current_route_name == 'entity.webform.canonical') {
+      $term = $this->getSectionByName('Contacto');
+      if ($term !== FALSE) {
+        $this->generateContent($build, $term);
+      }
+    }
     else {
-      $terms = $this->entityTypeManager->getStorage('taxonomy_term')
-      ->loadByProperties(['vid' => 'section', 'name' => 'General']);
-      $term = reset($terms);
-      $render_image = $this->getHeaderImage($term);
-      if (isset($render_image)) {
-        $build['content'] = [
-          '#markup' => $render_image,
-        ];
+      $term = $this->getSectionByName('General');
+      if ($term !== FALSE) {
+        $this->generateContent($build, $term);
       }
     }
     return $build;
+  }
+
+  private function generateContent(&$build, $entity) {
+    $render_image = $this->getHeaderImage($entity);
+    if (isset($render_image) && strlen($render_image) > 0) {
+      $build['content'] = [
+        '#markup' => $render_image,
+      ];
+    }
+  }
+
+  private function getSectionByName($name) {
+    $terms = $this->entityTypeManager->getStorage('taxonomy_term')
+    ->loadByProperties(['vid' => 'section', 'name' => $name]);
+    return reset($terms);
   }
 
   private function getHeaderImage($entity) {
