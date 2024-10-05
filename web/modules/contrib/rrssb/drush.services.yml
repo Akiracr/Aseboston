@@ -1,0 +1,5 @@
+services:
+  rrssb.commands:
+    class: \Drupal\rrssb\Commands\RrssbCommands
+    tags:
+      - { name: drush.command }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "181b27a6076a291a39c6cb8a41b662e3",
+    "content-hash": "24d3e2f48229929b43d1d8fe8be3d656",
     "packages": [
         {
             "name": "akiracr/context_groups",
@@ -4307,6 +4307,60 @@
             }
         },
         {
+            "name": "drupal/rrssb",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rrssb.git",
+                "reference": "8.x-2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rrssb-8.x-2.6.zip",
+                "reference": "8.x-2.6",
+                "shasum": "e594f89aa12401a9bf7d31875bb78a689f03b5d2"
+            },
+            "require": {
+                "drupal/core": "^10 || ^11",
+                "rrssb/rrssb-plus": "^0.5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.6",
+                    "datestamp": "1727463510",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "adamps",
+                    "homepage": "https://www.drupal.org/user/2650563"
+                },
+                {
+                    "name": "mike.roberts",
+                    "homepage": "https://www.drupal.org/user/1270690"
+                }
+            ],
+            "description": "Adds the ability to use the Ridiculously Responsive Social Share Buttons to your Drupal site.",
+            "homepage": "https://www.drupal.org/project/rrssb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rrssb"
+            }
+        },
+        {
             "name": "drupal/splide",
             "version": "2.0.10",
             "source": {
@@ -7206,6 +7260,57 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rrssb/rrssb-plus",
+            "version": "0.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AdamPS/rrssb-plus.git",
+                "reference": "b71aac5e90b69ce3fae2c2a8c65481a60ee0667a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AdamPS/rrssb-plus/zipball/b71aac5e90b69ce3fae2c2a8c65481a60ee0667a",
+                "reference": "b71aac5e90b69ce3fae2c2a8c65481a60ee0667a",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Shepherd",
+                    "email": "adam@albanyweb.co.uk"
+                },
+                {
+                    "name": "Joshua Tuscan",
+                    "email": "hello@joshuatuscan.com"
+                },
+                {
+                    "name": "Daniel Box",
+                    "email": "daniel@kurtnoble.com"
+                }
+            ],
+            "description": "Ridiculously Responsive Social Sharing Buttons Plus",
+            "homepage": "http://www.albanyweb.co.uk/rrssb-plus",
+            "keywords": [
+                "buttons",
+                "plus",
+                "responsive",
+                "ridiculously",
+                "rrssb",
+                "sharing",
+                "social"
+            ],
+            "support": {
+                "docs": "https://github.com/AdamPS/rrssb-plus/README.md",
+                "issues": "https://github.com/AdamPS/rrssb-plus/issues",
+                "source": "https://github.com/AdamPS/rrssb-plus"
+            },
+            "time": "2023-05-19T11:44:38+00:00"
         },
         {
             "name": "sebastian/diff",
