@@ -124,3 +124,43 @@
     border-top-right-radius: 1rem;
   }
 }
+
+
+/**
+ * RRSSB buttons.
+ */
+ .rrssb-buttons a:hover {
+  text-decoration: none !important;
+ }
+
+ .rrssb-buttons li.rrssb-facebook a {
+  background-color: #305f97;
+}
+
+.rrssb-buttons li.rrssb-facebook a:hover {
+  background-color: #244872;
+}
+
+.rrssb-buttons li.rrssb-twitter a {
+  background-color: #0f75bd;
+}
+
+.rrssb-buttons li.rrssb-twitter a:hover {
+  background-color: darken(#0f75bd, 8%);
+}
+
+.rrssb-buttons li.rrssb-whatsapp a {
+  background-color: #0f7568;
+}
+
+.rrssb-buttons li.rrssb-whatsapp a:hover {
+  background-color: darken(#0f7568, 8%);
+}
+
+.rrssb-buttons li.rrssb-email a {
+  background-color: #015fb9;
+}
+
+.rrssb-buttons li.rrssb-email a:hover {
+  background-color: darken(#015fb9, 8%);
+}
