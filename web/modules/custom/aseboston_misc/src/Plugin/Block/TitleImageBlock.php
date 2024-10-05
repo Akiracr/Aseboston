@@ -104,7 +104,7 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     if ($node instanceof NodeInterface && $node->type->entity->id() == 'agreement') {
       $term = $node->field_category->entity;
       $render_image = $this->getHeaderImage($term);
-      if (isset($render_image)) {
+      if (isset($render_image) && strlen($render_image) > 0) {
         $build['content'] = [
           '#markup' => $render_image,
         ];
@@ -112,7 +112,7 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
     }
     elseif ($node instanceof NodeInterface && $node->hasField('field_image')) {
       $render_image = $this->getHeaderImage($node);
-      if (isset($render_image)) {
+      if (isset($render_image) && strlen($render_image) > 0) {
         $build['content'] = [
           '#markup' => $render_image,
         ];
@@ -132,7 +132,7 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
         ->loadByProperties(['vid' => 'section', 'name' => 'Contacto']);
       $term = reset($terms);
       $render_image = $this->getHeaderImage($term);
-      if (isset($render_image)) {
+      if (isset($render_image) && strlen($render_image) > 0) {
         $build['content'] = [
           '#markup' => $render_image,
         ];
@@ -157,7 +157,6 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
         ];
       }
     }
-
     return $build;
   }
 
