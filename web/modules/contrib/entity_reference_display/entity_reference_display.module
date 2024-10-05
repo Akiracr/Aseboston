@@ -14,19 +14,33 @@ use Drupal\entity_reference_display\Plugin\Field\FieldFormatter\EntityReferenceR
  */
 function entity_reference_display_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   switch ($form_id) {
-    // Disable cardinality settings for 1 value limit.
     case 'field_storage_config_edit_form':
       /** @var \Drupal\field\Entity\FieldConfig $field_config */
       $field_config = $form_state->getStorage()['field_config'];
       // Only for display mode field.
       if ($field_config->getType() == 'entity_reference_display') {
-        // Disable editing by user.
-        $form['cardinality_container']['#disabled'] = TRUE;
-        // Remove states settings to disable JS widget.
-        unset($form['cardinality_container']['cardinality_number']['#states']);
+
+        // Disable editing and remove states for the cardinality settings.
+        _disable_cardinality_settings($form['cardinality_container']);
       }
       break;
+
+    case 'field_config_edit_form':
+      // Disable editing and remove states for the cardinality settings nested deeper.
+      _disable_cardinality_settings($form['field_storage']['subform']['cardinality_container']);
+      break;
   }
+}
+
+/**
+ * Disable cardinality settings in a form section.
+ *
+ * @param array &$cardinality_container
+ *   The cardinality section of the form.
+ */
+function _disable_cardinality_settings(array &$cardinality_container) {
+  $cardinality_container['#disabled'] = TRUE;
+  unset($cardinality_container['cardinality_number']['#states']);
 }
 
 /**
