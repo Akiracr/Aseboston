@@ -103,6 +103,7 @@
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/views_bootstrap": "^5.5@RC",
         "drupal/webform": "^6.2",
+        "drupal/yearonly": "^9.1",
         "drupal/youtube": "^2.0",
         "drush/drush": "^12.5",
         "mglaman/composer-drupal-lenient": "^1.0",
