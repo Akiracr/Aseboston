@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '63a47a9241117094eb24775989d26be0845c3f9e',
+        'reference' => 'c0e3c480834b892646d63ff35768b46f525a272c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -622,6 +622,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/file_download' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/file_download',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/fontawesome' => array(
             'pretty_version' => '2.26.0',
             'version' => '2.26.0.0',
@@ -724,7 +733,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '63a47a9241117094eb24775989d26be0845c3f9e',
+            'reference' => 'c0e3c480834b892646d63ff35768b46f525a272c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -1,0 +1,21 @@
+field.formatter.settings.file_download_formatter:
+  type: mapping
+  label: 'File download formatter settings'
+  mapping:
+    link_title:
+      type: string
+      label: 'Title display'
+    custom_title_text:
+      type: label
+      label: 'Custom text'
+    file_size:
+      type: boolean
+      label: 'Display file size'
+
+field.formatter.settings.file_download_uri_formatter:
+  type: mapping
+  label: 'File download URI formatter settings'
+  mapping:
+    absolute_url:
+      type: boolean
+      label: 'Absolute URL'

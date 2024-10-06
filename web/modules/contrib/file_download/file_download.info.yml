@@ -1,0 +1,9 @@
+type: module
+name: 'File Download'
+description: 'Enable a file to download.'
+core_version_requirement: ^10.1 || ^11
+
+# Information added by Drupal.org packaging script on 2024-08-05
+version: '2.0.0'
+project: 'file_download'
+datestamp: 1722899294
