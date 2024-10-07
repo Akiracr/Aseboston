@@ -149,8 +149,26 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
         ];
       }
     }
-    elseif ($current_route_name == 'view.galleries.page_1') {
+    elseif ($current_route_name == 'view.articules.page_1') {
       $term = $this->getSectionByName('Galerias');
+      if ($term !== FALSE) {
+        $this->generateContent($build, $term);
+      }
+    }
+    elseif ($current_route_name == 'view.galleries.page_1') {
+      $term = $this->getSectionByName('Cultura Solidarista y Responsabilidad Social');
+      if ($term !== FALSE) {
+        $this->generateContent($build, $term);
+      }
+    }
+    elseif ($current_route_name == 'view.file_content_type.page_1') {
+      $term = $this->getSectionByName('Estado financieros');
+      if ($term !== FALSE) {
+        $this->generateContent($build, $term);
+      }
+    }
+    elseif ($current_route_name == 'view.file_content_type.page_2') {
+      $term = $this->getSectionByName('Estatutos');
       if ($term !== FALSE) {
         $this->generateContent($build, $term);
       }
@@ -186,7 +204,7 @@ class TitleImageBlock extends BlockBase implements ContainerFactoryPluginInterfa
   }
 
   private function getHeaderImage($entity) {
-    if (!$entity->get('field_image')->isEmpty()) {
+    if (isset($entity->field_image) && !$entity->get('field_image')->isEmpty()) {
       // Load the field image render array.
       $image = $entity->get('field_image')->view('title');
       // Render the image field and add it to the block output.

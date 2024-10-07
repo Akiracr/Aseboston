@@ -6,6 +6,9 @@
  */
 
 use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Database\Database;
 
 /**
  * Implements of hook_entity_base_field_info_alter().
@@ -29,4 +32,44 @@ function aseboston_misc_entity_base_field_info_alter(&$fields, EntityTypeInterfa
       ],
     ]);
   }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function aseboston_misc_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  if (isset($form['#id']) && ($form['#id'] == 'views-exposed-form-file-content-type-page-1' || $form['#id'] == 'views-exposed-form-file-content-type-page-4')) {
+    if (isset($form['year'])) {
+      $years = _aseboston_misc_options_field_year();
+      $form['year'] = [
+        '#type' => 'select',
+        '#title' => t('Year'),
+        '#options' => $years,
+        '#empty_option' => t('- Any -'),
+      ];
+    }
+  }
+}
+
+/**
+ * Function to retrieve unique values of field_year and use them in a select.
+ *
+ * @return array
+ *   An array with the available years, sorted from highest to lowest.
+ */
+function _aseboston_misc_options_field_year() {
+  $database = Database::getConnection();
+
+  $query = $database->select('node__field_year', 'fy')
+    ->fields('fy', ['field_year_value'])
+    ->distinct()
+    ->orderBy('field_year_value', 'DESC');
+  $result = $query->execute();
+
+  $options = [];
+  foreach ($result as $record) {
+    $options[$record->field_year_value] = $record->field_year_value;
+  }
+
+  return $options;
 }

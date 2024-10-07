@@ -2452,7 +2452,8 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
-                }
+                },
+                "patches_applied": []
             },
             "installation-source": "dist",
             "autoload": {
@@ -3148,6 +3149,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Field cardinality settings broken after 10.2 update": "https://www.drupal.org/files/issues/2024-09-17/entity_reference_display-3475014-2.patch"
                 }
             },
             "installation-source": "dist",

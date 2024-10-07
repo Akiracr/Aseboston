@@ -9,6 +9,14 @@ Description: Bootstrap 4 with Sass
 /* GENERAL STYLES
 -------------------------------------------------*/
 
+.mb-3.col-12 {
+    position: relative;
+}
+
+.meta-data {
+    color: $pink;
+}
+
 body {
     background: $gray-1;
 }

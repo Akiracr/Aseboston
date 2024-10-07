@@ -10,8 +10,10 @@ $accent-dark: shade-color($accent-shade, 12%);
 // Reassign color vars to semantic color scheme
 $darkblue: #0e2450;
 $blue: #1F3B71;
+$lightblue: #eff8fd;
 $skyblue: #1F71B7;
 $red: #E22E26;
+$pink: #e8584f;
 $yellow: #ffc107;
 $green: #077E40;
 $cyan: #17a2b8;
@@ -91,3 +93,9 @@ $navbar-light-active-color: $navbar-active-color;
 
 //$nav-link-font-size: 1rem;
 $nav-link-font-weight:  bold;
+
+
+// Table.
+$table-color: $skyblue;
+$table-striped-bg: $lightblue;
+$table-hover-bg: darken($lightblue, 3%);

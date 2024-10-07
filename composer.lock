@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b423fe54bf28cc5120e69a4ea6224848",
+    "content-hash": "1d9f3275106ca71877439718dc878390",
     "packages": [
         {
             "name": "akiracr/context_groups",

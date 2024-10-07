@@ -10,26 +10,17 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\entity_reference_display\Plugin\Field\FieldFormatter\EntityReferenceRevisionsDisplayFormatter;
 
 /**
- * Implements hook_form_alter().
+ * Implements hook_form_FORM_ID_alter().
  */
-function entity_reference_display_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  switch ($form_id) {
-    case 'field_storage_config_edit_form':
-      /** @var \Drupal\field\Entity\FieldConfig $field_config */
-      $field_config = $form_state->getStorage()['field_config'];
-      // Only for display mode field.
-      if ($field_config->getType() == 'entity_reference_display') {
+function entity_reference_display_form_field_storage_config_edit_form_alter(&$form, FormStateInterface $form_state) {
+  entity_reference_display_disable_cardinality_settings($form['cardinality_container'], $form_state);
+}
 
-        // Disable editing and remove states for the cardinality settings.
-        _disable_cardinality_settings($form['cardinality_container']);
-      }
-      break;
-
-    case 'field_config_edit_form':
-      // Disable editing and remove states for the cardinality settings nested deeper.
-      _disable_cardinality_settings($form['field_storage']['subform']['cardinality_container']);
-      break;
-  }
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function entity_reference_display_form_field_config_edit_form_alter(&$form, FormStateInterface $form_state) {
+  entity_reference_display_disable_cardinality_settings($form['field_storage']['subform']['cardinality_container'], $form_state);
 }
 
 /**
@@ -37,10 +28,16 @@ function entity_reference_display_form_alter(&$form, FormStateInterface $form_st
  *
  * @param array &$cardinality_container
  *   The cardinality section of the form.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The form state.
  */
-function _disable_cardinality_settings(array &$cardinality_container) {
-  $cardinality_container['#disabled'] = TRUE;
-  unset($cardinality_container['cardinality_number']['#states']);
+function entity_reference_display_disable_cardinality_settings(array &$cardinality_container, FormStateInterface $form_state) {
+  $field_config = $form_state->getStorage()['field_config'];
+  // Only for display mode field.
+  if ($field_config->getType() == 'entity_reference_display') {
+    $cardinality_container['#disabled'] = TRUE;
+    unset($cardinality_container['cardinality_number']['#states']);
+  }
 }
 
 /**

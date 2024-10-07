@@ -164,3 +164,28 @@
 .rrssb-buttons li.rrssb-email a:hover {
   background-color: darken(#015fb9, 8%);
 }
+
+
+/**
+ * Slick.
+ */
+.splide__arrow {
+  border-radius: 20%;
+}
+
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+  border-color: $skyblue;
+}
+
+
+/**
+ * Table.
+ */
+.files-table {
+  thead {
+    display: none;
+  }
+  tbody tr td:last-child {
+    text-align: right;
+  }
+}

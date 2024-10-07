@@ -177,6 +177,9 @@
         "patches": {
             "drupal/context": {
                 "Issue #3374119: Search is broken when placing block": "https://git.drupalcode.org/project/context/-/merge_requests/36.patch"
+            },
+            "drupal/entity_reference_display": {
+                "Field cardinality settings broken after 10.2 update": "https://www.drupal.org/files/issues/2024-09-17/entity_reference_display-3475014-2.patch"
             }
         },
         "drupal-core-project-message": {
