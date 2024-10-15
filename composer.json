@@ -180,6 +180,9 @@
             },
             "drupal/entity_reference_display": {
                 "Field cardinality settings broken after 10.2 update": "https://www.drupal.org/files/issues/2024-09-17/entity_reference_display-3475014-2.patch"
+            },
+            "drupal/rrssb": {
+                "Updated icon for X/Twitter": "https://www.drupal.org/files/issues/2024-10-15/update-icon-for-x-twitter-3408538-11.patch"
             }
         },
         "drupal-core-project-message": {

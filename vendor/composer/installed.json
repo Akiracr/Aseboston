@@ -4586,6 +4586,9 @@
                     "services": {
                         "drush.services.yml": "^11"
                     }
+                },
+                "patches_applied": {
+                    "Updated icon for X/Twitter": "https://www.drupal.org/files/issues/2024-10-15/update-icon-for-x-twitter-3408538-11.patch"
                 }
             },
             "installation-source": "dist",

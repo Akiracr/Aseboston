@@ -106,6 +106,12 @@ function rrssb_rrssb_buttons() {
       'color' => '#43d854',
       'color_hover' => '#28c039',
     ],
+    'X' => [
+      'share_url' => 'https://x.com/intent/tweet?text=[rrssb:title]&url=[rrssb:url]',
+      'follow_url' => 'https://x.com/[rrssb:username]',
+      'color' => '#0f1419',
+      'color_hover' => '#2d2d2d',
+    ],
     'youtube' => [
       'follow_url' => 'https://www.youtube.com/user/[rrssb:username]',
       'color' => '#df1c31',
